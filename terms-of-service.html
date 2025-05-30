@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" />
     <title>QuantumOS.ai – Terms of Service</title>
-
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
@@ -17,70 +15,43 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="min-h-screen bg_grd">
+<body>
     <!-- Header -->
     <header class="header sticky top-0 py-4">
-        <div class="container mx-auto px-4">
-            <div class="hidden justify-between items-center">
-                <div class="flex items-center">
-                    <!-- <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg">
-                        <span class="text-white font-bold text-xl">Q</span>
-                    </div> -->
-                    <div>
-                        <img class="w-12 h-12 object-contain" src="assets/img/logo.png" alt="logo">
-                    </div>
-                    <h1 class="text-xl font-bold ml-2 text-white">QuantumOS.ai</h1>
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div>
+                    <img class="w-12 h-12 object-contain" src="assets/img/logo.png" alt="logo">
                 </div>
-
-                <nav class="hidden md:block">
-                    <ul class="flex space-x-8">
-                        <li><a href="#workflow" class="text-gray-300 hover:text-white transition">Workflow</a></li>
-                        <li><a href="#workforce" class="text-gray-300 hover:text-white transition">AI Workforce</a></li>
-                        <li><a href="#alli" class="text-gray-300 hover:text-white transition">Meet Alli</a></li>
-                        <li><a href="#results" class="text-gray-300 hover:text-white transition">Results</a></li>
+                <h1 class="text-xl font-bold ml-2 text-white">QuantumOS.ai</h1>
+            </div>
+            <div class="header_menu">
+                <div class="flex items-center justify-end lg:hidden mb-6">
+                    <button class="w-9 h-9 rounded-lg bg-white bg-opacity-10 border hover:bg-gray-50 transition duration-300 toggle_menu" type="button">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+                <nav>
+                    <ul class="flex flex-col lg:flex-row items-center gap-y-6 gap-x-6">
+                        <li><a class="text-gray-300 hover:text-white active_link" href="/">Home</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="enterprise-solutions.html">Enterprise Solutions</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="about-us.html">About Us</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="contact-us.html">Contact Us</a></li>
+                        <li class="lg:hidden"><a class="btn-gradient text-white font-medium py-2 px-4 rounded-md transition duration-300" href="sms:+14805551212">Get Started</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="flex justify-between items-center">
-                <a class="flex items-center space-x-3" href="#home">
-                    <div>
-                        <img class="w-12 h-12 object-contain" src="assets/img/logo.png" alt="logo">
-                    </div>
-                    <h1 class="text-xl font-bold ml-2 text-white">QuantumOS.ai</h1>
-                </a>
-                <ul class="hidden space-x-8 text-md text-blue-100 font-semibold">
-                    <li><a href="#workflow" class="text-gray-300 hover:text-white transition">Workflow</a></li>
-                    <li><a href="#workforce" class="text-gray-300 hover:text-white transition">AI Workforce</a></li>
-                    <li><a href="#alli" class="text-gray-300 hover:text-white transition">Meet Alli</a></li>
-                    <li><a href="#results" class="text-gray-300 hover:text-white transition">Results</a></li>
-                </ul>
-
-                <nav class="header_menu">
-                    <div class="flex items-center justify-end lg:hidden mb-6">
-                        <button
-                            class="p-2 rounded-lg bg-white bg-opacity-10 text-white hover:bg-opacity-20 transition duration-300 w-10 toggle_menu"
-                            type="button">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                    <ul class="flex flex-col lg:flex-row items-center gap-6">
-                        <li><a href="#workflow" class="text-gray-300 hover:text-white transition">Workflow</a></li>
-                        <li><a href="#workforce" class="text-gray-300 hover:text-white transition">AI Workforce</a></li>
-                        <li><a href="#alli" class="text-gray-300 hover:text-white transition">Meet Alli</a></li>
-                        <li><a href="#results" class="text-gray-300 hover:text-white transition">Results</a></li>
-                    </ul>
-                </nav>
-
-                <div class="lg:hidden">
-                    <button
-                        class="p-2 rounded-lg bg-white bg-opacity-10 text-white hover:bg-opacity-20 transition duration-300 w-10 toggle_menu"
-                        type="button">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
+            <div class="hidden lg:block">
+                <a href="sms:+14805551212" class="btn-gradient text-white font-medium py-2 px-4 rounded-md transition duration-300">Get Started</a>
+            </div>
+            <div class="lg:hidden">
+                <button class="w-9 h-9 rounded-lg bg-white bg-opacity-10 border hover:bg-gray-50 transition duration-300 toggle_menu">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
             </div>
         </div>
     </header>
+    <div id="backdrop" class="toggle_menu"></div>
 
     <!-- main -->
     <main class="main bg-white text-gray-700">
@@ -520,7 +491,7 @@
                         15201 N Cave Creek Rd, Suite B<br> Phoenix, AZ 85032<br> 480-913-0155
                     </p>
                 </div>
-
+    
                 <div>
                     <h3 class="text-lg font-bold text-white mb-4">Services</h3>
                     <ul class="space-y-2 text-gray-400">
@@ -531,7 +502,7 @@
                         <li><a href="#results" class="hover:text-white transition">Business Results</a></li>
                     </ul>
                 </div>
-
+    
                 <div>
                     <h3 class="text-lg font-bold text-white mb-4">Contact Us</h3>
                     <p class="text-gray-400 mb-4">
@@ -542,9 +513,17 @@
                     </a>
                 </div>
             </div>
-
+    
             <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-                <p>© 2025 Quantum OS. All rights reserved.</p>
+                <div class="flex flex-col gap-5 justify-between items-center md:flex-row">
+                    <p>© 2025 Quantum OS. All rights reserved.</p>
+                    <div>
+                        <ul class="flex gap-4 text-gray-400">
+                            <li><a href="privacy-policy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                            <li><a href="terms-of-service.html" class="hover:text-white transition">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

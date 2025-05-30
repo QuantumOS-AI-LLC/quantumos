@@ -67,66 +67,44 @@
     </script>
 </head>
 
-<body class="min-h-screen bg_grd">
+<body>
     <!-- Header -->
     <header class="header sticky top-0 py-4">
-        <div class="container mx-auto px-4">
-            <div class="hidden justify-between items-center">
-                <div class="flex items-center">
-                    <!-- <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg">
-                        <span class="text-white font-bold text-xl">Q</span>
-                    </div> -->
-                    <div>
-                        <img class="w-12 h-12 object-contain" src="assets/img/logo.png" alt="logo">
-                    </div>
-                    <h1 class="text-xl font-bold ml-2 text-white">QuantumOS.ai</h1>
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div>
+                    <img class="w-12 h-12 object-contain" src="assets/img/logo.png" alt="logo">
                 </div>
-    
-                <nav class="hidden md:block">
-                    <ul class="flex space-x-8">
-                        <li><a href="#workflow" class="text-gray-300 hover:text-white transition">Workflow</a></li>
-                        <li><a href="#workforce" class="text-gray-300 hover:text-white transition">AI Workforce</a></li>
-                        <li><a href="#alli" class="text-gray-300 hover:text-white transition">Meet Alli</a></li>
-                        <li><a href="#results" class="text-gray-300 hover:text-white transition">Results</a></li>
+                <h1 class="text-xl font-bold ml-2 text-white">QuantumOS.ai</h1>
+            </div>
+            <div class="header_menu">
+                <div class="flex items-center justify-end lg:hidden mb-6">
+                    <button class="w-9 h-9 rounded-lg bg-white bg-opacity-10 border hover:bg-gray-50 transition duration-300 toggle_menu" type="button">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+                <nav>
+                    <ul class="flex flex-col lg:flex-row items-center gap-y-6 gap-x-6">
+                        <li><a class="text-gray-300 hover:text-white active_link" href="/">Home</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="enterprise-solutions.html">Enterprise Solutions</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="about-us.html">About Us</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="contact-us.html">Contact Us</a></li>
+                        <li class="lg:hidden"><a class="btn-gradient text-white font-medium py-2 px-4 rounded-md transition duration-300" href="sms:+14805551212">Get Started</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="flex justify-between items-center">
-                <a class="flex items-center space-x-3" href="#home">
-                    <div>
-                        <img class="w-12 h-12 object-contain" src="assets/img/logo.png" alt="logo">
-                    </div>
-                    <h1 class="text-xl font-bold ml-2 text-white">QuantumOS.ai</h1>
-                </a>
-                <ul class="hidden space-x-8 text-md text-blue-100 font-semibold">
-                    <li><a href="#workflow" class="text-gray-300 hover:text-white transition">Workflow</a></li>
-                    <li><a href="#workforce" class="text-gray-300 hover:text-white transition">AI Workforce</a></li>
-                    <li><a href="#alli" class="text-gray-300 hover:text-white transition">Meet Alli</a></li>
-                    <li><a href="#results" class="text-gray-300 hover:text-white transition">Results</a></li>
-                </ul>
-    
-                <nav class="header_menu">
-                    <div class="flex items-center justify-end lg:hidden mb-6">
-                        <button class="p-2 rounded-lg bg-white bg-opacity-10 text-white hover:bg-opacity-20 transition duration-300 w-10 toggle_menu" type="button">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                    <ul class="flex flex-col lg:flex-row items-center gap-6">
-                        <li><a href="#workflow" class="text-gray-300 hover:text-white transition">Workflow</a></li>
-                        <li><a href="#workforce" class="text-gray-300 hover:text-white transition">AI Workforce</a></li>
-                        <li><a href="#alli" class="text-gray-300 hover:text-white transition">Meet Alli</a></li>
-                        <li><a href="#results" class="text-gray-300 hover:text-white transition">Results</a></li>
-                    </ul>
-                </nav>
-    
-                <div class="lg:hidden">
-                    <button class="p-2 rounded-lg bg-white bg-opacity-10 text-white hover:bg-opacity-20 transition duration-300 w-10 toggle_menu" type="button">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
+            <div class="hidden lg:block">
+                <a href="sms:+14805551212" class="btn-gradient text-white font-medium py-2 px-4 rounded-md transition duration-300">Get Started</a>
+            </div>
+            <div class="lg:hidden">
+                <button class="w-9 h-9 rounded-lg bg-white bg-opacity-10 border hover:bg-gray-50 transition duration-300 toggle_menu">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
             </div>
         </div>
     </header>
+    <div id="backdrop" class="toggle_menu"></div>
+    
 
     <!-- main -->
     <main class="main">
@@ -166,7 +144,7 @@
                     </div>
                     <div class="lg:w-1/2 relative">
                         <div class="hero-animation relative">
-                            <img src="https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2024/05/08234415/AI-for-workflow-automation.png" alt="Alli AI Manager" class="w-full h-auto rounded-xl shadow-2xl">
+                            <img src="assets/img/AI-for-workflow-automation.png" alt="Alli AI Manager" class="w-full h-auto rounded-xl shadow-2xl">
 
                             <!-- Floating elements -->
                             <div class="absolute top-10 right-10 glass-card p-3 rounded-lg w-40 floating">
@@ -246,7 +224,7 @@
                                 </div>
                             </div>
                             <div class="md:w-1/2">
-                                <img src="https://quixy.com/wp-content/uploads/2024/03/Inblog_Image_Advantages-of-Ai-Workflow-Automation.png" alt="Business Analysis" class="w-full h-auto rounded-xl shadow-lg">
+                                <img src="assets/img/Inblog_Image_Advantages-of-Ai-Workflow-Automation.png" alt="Business Analysis" class="w-full h-auto rounded-xl shadow-lg">
                             </div>
                         </div>
 
@@ -264,7 +242,7 @@
                                 </div>
                             </div>
                             <div class="md:w-1/2">
-                                <img src="https://litslink.com/wp-content/uploads/2024/06/AI-workflow1-1024x683.jpg" alt="Custom Workflow Design" class="w-full h-auto rounded-xl shadow-lg">
+                                <img src="assets/img/AI-workflow1-1024x683.jpg" alt="Custom Workflow Design" class="w-full h-auto rounded-xl shadow-lg">
                             </div>
                         </div>
 
@@ -282,7 +260,7 @@
                                 </div>
                             </div>
                             <div class="md:w-1/2">
-                                <img src="https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2024/05/08234415/AI-for-workflow-automation.png" alt="Seamless Implementation" class="w-full h-auto rounded-xl shadow-lg">
+                                <img src="assets/img/AI-for-workflow-automation.png" alt="Seamless Implementation" class="w-full h-auto rounded-xl shadow-lg">
                             </div>
                         </div>
 
@@ -300,7 +278,7 @@
                                 </div>
                             </div>
                             <div class="md:w-1/2">
-                                <img src="https://quixy.com/wp-content/uploads/2024/03/Inblog_Image_Challenges-and-Considerations-with-AI-Workflow-Automation.png" alt="Continuous Optimization" class="w-full h-auto rounded-xl shadow-lg">
+                                <img src="assets/img/Inblog_Image_Challenges-and-Considerations-with-AI-Workflow-Automation.png" alt="Continuous Optimization" class="w-full h-auto rounded-xl shadow-lg">
                             </div>
                         </div>
                     </div>
@@ -740,7 +718,7 @@
 
                 <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
                     <div class="md:w-2/5 mb-12 md:mb-0">
-                        <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/a5ef1cff-9845-404e-b834-fb34d4308ea6/c98a3481-9259-4dc1-bf92-2faf06f58556.png" alt="Alli AI Manager" class="w-full h-auto rounded-xl shadow-2xl">
+                        <img src="assets/img/c98a3481-9259-4dc1-bf92-2faf06f58556.jpg" alt="Alli AI Manager" class="w-full h-auto rounded-xl shadow-2xl">
                     </div>
 
                     <div class="md:w-3/5 md:pl-12">
@@ -800,7 +778,7 @@
                     <div class="glass-card p-8 rounded-xl mb-16" data-aos="zoom-in">
                         <div class="flex flex-col md:flex-row items-center">
                             <div class="md:w-1/5 lg:w-2/5 mb-8 md:mb-0">
-                                <!-- <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/1h3JAuEknPVEhUabcWny/media/2bdd99eb-269f-4191-827e-9f9b7967093f.png" alt="Handyman Service Case Study" class="w-full h-auto rounded-xl mb-3"> -->
+                                <!-- <img src="assets/img/2bdd99eb-269f-4191-827e-9f9b7967093f.png" alt="Handyman Service Case Study" class="w-full h-auto rounded-xl mb-3"> -->
                                 <div class="mb-4">
                                     <img class="w-1/3 mx-auto object-contain" src="assets/img/spotify.png" alt="spotify">
                                 </div>
@@ -1026,7 +1004,15 @@
             </div>
     
             <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-                <p>© 2025 Quantum OS. All rights reserved.</p>
+                <div class="flex flex-col gap-5 justify-between items-center md:flex-row">
+                    <p>© 2025 Quantum OS. All rights reserved.</p>
+                    <div>
+                        <ul class="flex gap-4 text-gray-400">
+                            <li><a href="privacy-policy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                            <li><a href="terms-of-service.html" class="hover:text-white transition">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
