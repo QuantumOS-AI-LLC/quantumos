@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Solutions | QuantumOS.ai</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .neo-card {
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .neo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+        }
+        
+        .pulse-glow {
+            animation: pulseGlow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulseGlow {
+            from {
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            }
+            to {
+                box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+            }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .revenue-metric {
+            background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .industry-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+        
+        .haptic-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4);
+            background-size: 400% 400%;
+            animation: gradientShift 3s ease infinite;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .haptic-circle::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            height: 80%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: ripple 2s ease-in-out infinite;
+        }
+        
+        @keyframes ripple {
+            0% {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 0;
+            }
+        }
+        
+        .productivity-bar {
+            height: 8px;
+            background: linear-gradient(90deg, #FF6B6B 0%, #4ECDC4 50%, #45B7D1 100%);
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .productivity-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            animation: shimmer 2s ease-in-out infinite;
+        }
+        
+        @keyframes shimmer {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .metric-card:hover::before {
+            left: 100%;
+        }
+        
+        .price-tag {
+            background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.5rem;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-tag::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease;
+        }
+        
+        .price-tag:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header sticky top-0 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div>
+                    <img class="w-12 h-12 object-contain" src="assets/img/logo.png" alt="logo">
+                </div>
+                <h1 class="text-xl font-bold ml-2 text-white">QuantumOS.ai</h1>
+            </div>
+            <div class="header_menu">
+                <div class="flex items-center justify-end lg:hidden mb-6">
+                    <button class="w-9 h-9 rounded-lg bg-white bg-opacity-10 border hover:bg-gray-50 transition duration-300 toggle_menu" type="button">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+                <nav>
+                    <ul class="flex flex-col lg:flex-row items-center gap-y-6 gap-x-6">
+                        <li><a class="text-gray-300 hover:text-white active_link" href="/">Home</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="enterprise-solutions.html">Enterprise Solutions</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="air-q.html">AIR Q</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="https://airassist.ai/" target="_blank">Air Assist</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="pocket-boss.html" target="_blank">Pocket Boss</a></li>
+                        <li class="lg:hidden"><a class="btn-gradient text-white font-medium py-2 px-4 rounded-md transition duration-300" href="sms:+14809130155">Get Started</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden lg:block">
+                <a href="sms:+14809130155" class="btn-gradient text-white font-medium py-2 px-4 rounded-md transition duration-300">Get Started</a>
+            </div>
+            <div class="lg:hidden">
+                <button class="w-9 h-9 rounded-lg bg-white bg-opacity-10 border hover:bg-gray-50 transition duration-300 toggle_menu">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="backdrop" class="toggle_menu"></div>
+
+    <!-- main -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-20 px-4">
+            <div class="max-w-7xl mx-auto text-center">
+                <div class="floating">
+                    <h1 class="text-6xl font-bold text-white mb-6 font-['Space_Grotesk']">
+                        Pocket Boss
+                    </h1>
+                    <p class="text-2xl text-white mb-4 opacity-90">
+                        Your Business, Auto-Managed
+                    </p>
+                    <p class="text-lg text-white mb-12 opacity-80 max-w-3xl mx-auto">
+                        Your fully automated digital employee that works tirelessly to manage customer communications and streamline your entire business.
+                    </p>
+                </div>
+
+                <!-- Haptic Graphics -->
+                <div class="flex justify-center space-x-8">
+                    <div class="haptic-circle floating"></div>
+                    <div class="haptic-circle floating" style="animation-delay: 1s;"></div>
+                    <div class="haptic-circle floating" style="animation-delay: 2s;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Revenue Streams Overview -->
+        <section class="py-16 px-4">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-white text-center mb-12">
+                    Transform Costs Into <span class="revenue-metric">Revenue Streams</span>
+                </h2>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="metric-card">
+                        <i class="fas fa-money-bill-wave text-3xl text-green-400 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-white mb-2">Overhead Savings</h3>
+                        <p class="text-white opacity-80">Eliminated operational costs become direct profit</p>
+                        <div class="productivity-bar mt-4"></div>
+                    </div>
+
+                    <div class="metric-card">
+                        <i class="fas fa-laptop-code text-3xl text-blue-400 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-white mb-2">Software Elimination</h3>
+                        <p class="text-white opacity-80">No more expensive software subscriptions</p>
+                        <div class="productivity-bar mt-4"></div>
+                    </div>
+
+                    <div class="metric-card">
+                        <i class="fas fa-clock text-3xl text-purple-400 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-white mb-2">Time Recovery</h3>
+                        <p class="text-white opacity-80">Reclaimed management time = billable hours</p>
+                        <div class="productivity-bar mt-4"></div>
+                    </div>
+
+                    <div class="metric-card">
+                        <i class="fas fa-chart-line text-3xl text-orange-400 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-white mb-2">Efficiency Gains</h3>
+                        <p class="text-white opacity-80">Higher job completion rate = more revenue</p>
+                        <div class="productivity-bar mt-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Analysis -->
+        <section class="py-16 px-4">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-white text-center mb-12">
+                    Industry <span class="industry-gradient">Revenue Impact</span>
+                </h2>
+
+                <!-- Realtor Analysis -->
+                <div class="neo-card p-4 md:p-8 mb-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h3 class="text-3xl font-bold text-white mb-6 flex items-center">
+                                <i class="fas fa-home text-blue-400 mr-4"></i> Real Estate Agent
+                            </h3>
+
+                            <div class="space-y-6">
+                                <div class="glass-effect p-4 rounded-lg">
+                                    <h4 class="text-xl font-semibold text-white mb-2">Overhead Savings → Revenue</h4>
+                                    <p class="text-white opacity-80">Virtual assistant costs: $2,000/month → $24,000/year additional profit</p>
+                                    <div class="text-2xl font-bold text-green-400 mt-2">+$24,000/year</div>
+                                </div>
+
+                                <div class="glass-effect p-4 rounded-lg">
+                                    <h4 class="text-xl font-semibold text-white mb-2">Software Elimination → Revenue</h4>
+                                    <p class="text-white opacity-80">CRM + Phone system + Marketing tools: $300/month → $3,600/year saved</p>
+                                    <div class="text-2xl font-bold text-green-400 mt-2">+$3,600/year</div>
+                                </div>
+
+                                <div class="glass-effect p-4 rounded-lg">
+                                    <h4 class="text-xl font-semibold text-white mb-2">Time Recovery → Revenue</h4>
+                                    <p class="text-white opacity-80">20 hours/week admin → 20 hours client prospecting = 2 extra deals/month</p>
+                                    <div class="text-2xl font-bold text-green-400 mt-2">+$120,000/year</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart-container">
+                            <canvas id="realtorChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <div class="text-4xl font-bold revenue-metric">Total Revenue Impact: $147,600/year</div>
+                        <div class="text-xl text-white opacity-80 mt-2">ROI: 12,300% annually</div>
+                    </div>
+                </div>
+
+                <!-- Plumber Analysis -->
+                <div class="neo-card p-4 md:p-8 mb-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h3 class="text-3xl font-bold text-white mb-6 flex items-center">
+                                <i class="fas fa-wrench text-orange-400 mr-4"></i> Plumbing Business
+                            </h3>
+
+                            <div class="space-y-6">
+                                <div class="glass-effect p-4 rounded-lg">
+                                    <h4 class="text-xl font-semibold text-white mb-2">Overhead Savings → Revenue</h4>
+                                    <p class="text-white opacity-80">Dispatch service: $800/month → $9,600/year additional profit</p>
+                                    <div class="text-2xl font-bold text-green-400 mt-2">+$9,600/year</div>
+                                </div>
+
+                                <div class="glass-effect p-4 rounded-lg">
+                                    <h4 class="text-xl font-semibold text-white mb-2">Software Elimination → Revenue</h4>
+                                    <p class="text-white opacity-80">Scheduling + Communication tools: $200/month → $2,400/year saved</p>
+                                    <div class="text-2xl font-bold text-green-400 mt-2">+$2,400/year</div>
+                                </div>
+
+                                <div class="glass-effect p-4 rounded-lg">
+                                    <h4 class="text-xl font-semibold text-white mb-2">Time Recovery → Revenue</h4>
+                                    <p class="text-white opacity-80">15 hours/week admin → 15 hours billable work = $150/hour rate</p>
+                                    <div class="text-2xl font-bold text-green-400 mt-2">+$117,000/year</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart-container">
+                            <canvas id="plumberChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <div class="text-4xl font-bold revenue-metric">Total Revenue Impact: $129,000/year</div>
+                        <div class="text-xl text-white opacity-80 mt-2">ROI: 10,750% annually</div>
+                    </div>
+                </div>
+
+                <!-- Yoga Studio Analysis -->
+                <div class="neo-card p-4 md:p-8 mb-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h3 class="text-3xl font-bold text-white mb-6 flex items-center">
+                                <i class="fas fa-spa text-purple-400 mr-4"></i> Yoga Studio Owner
+                            </h3>
+
+                            <div class="space-y-6">
+                                <div class="glass-effect p-4 rounded-lg">
+                                    <h4 class="text-xl font-semibold text-white mb-2">Overhead Savings → Revenue</h4>
+                                    <p class="text-white opacity-80">Front desk staff: $1,200/month → $14,400/year additional profit</p>
+                                    <div class="text-2xl font-bold text-green-400 mt-2">+$14,400/year</div>
+                                </div>
+
+                                <div class="glass-effect p-4 rounded-lg">
+                                    <h4 class="text-xl font-semibold text-white mb-2">Software Elimination → Revenue</h4>
+                                    <p class="text-white opacity-80">Booking + Payment + Marketing systems: $250/month → $3,000/year saved</p>
+                                    <div class="text-2xl font-bold text-green-400 mt-2">+$3,000/year</div>
+                                </div>
+
+                                <div class="glass-effect p-4 rounded-lg">
+                                    <h4 class="text-xl font-semibold text-white mb-2">Time Recovery → Revenue</h4>
+                                    <p class="text-white opacity-80">10 hours/week admin → 10 hours teaching/workshops = $80/hour rate</p>
+                                    <div class="text-2xl font-bold text-green-400 mt-2">+$41,600/year</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart-container">
+                            <canvas id="yogaChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <div class="text-4xl font-bold revenue-metric">Total Revenue Impact: $59,000/year</div>
+                        <div class="text-xl text-white opacity-80 mt-2">ROI: 4,917% annually</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Features -->
+        <section class="py-16 px-4">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-white text-center mb-12">
+                    Pocket Boss <span class="revenue-metric">Base Camp</span>
+                </h2>
+
+                <div class="neo-card p-8 text-center mb-6">
+                    <div class="price-tag pulse-glow mb-8">$99/month</div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                        <div class="glass-effect p-6 rounded-lg">
+                            <i class="fas fa-desktop text-3xl text-blue-400 mb-4"></i>
+                            <h3 class="text-xl font-semibold text-white mb-2">Digital Command Center</h3>
+                            <p class="text-white opacity-80">Intuitive dashboard accessible from any device</p>
+                        </div>
+
+                        <div class="glass-effect p-6 rounded-lg">
+                            <i class="fas fa-phone text-3xl text-green-400 mb-4"></i>
+                            <h3 class="text-xl font-semibold text-white mb-2">Dedicated Local Number</h3>
+                            <p class="text-white opacity-80">Professional business line managed by AI</p>
+                        </div>
+
+                        <div class="glass-effect p-6 rounded-lg">
+                            <i class="fas fa-comments text-3xl text-purple-400 mb-4"></i>
+                            <h3 class="text-xl font-semibold text-white mb-2">Unlimited Messaging</h3>
+                            <p class="text-white opacity-80">SMS, MMS, and RCS messaging with automation</p>
+                        </div>
+
+                        <div class="glass-effect p-6 rounded-lg">
+                            <i class="fas fa-chart-bar text-3xl text-orange-400 mb-4"></i>
+                            <h3 class="text-xl font-semibold text-white mb-2">Lead Tracking & Analytics</h3>
+                            <p class="text-white opacity-80">Automated data processing and reporting</p>
+                        </div>
+
+                        <div class="glass-effect p-6 rounded-lg">
+                            <i class="fas fa-clock text-3xl text-red-400 mb-4"></i>
+                            <h3 class="text-xl font-semibold text-white mb-2">24/7 Availability</h3>
+                            <p class="text-white opacity-80">Never miss an opportunity again</p>
+                        </div>
+
+                        <div class="glass-effect p-6 rounded-lg">
+                            <i class="fas fa-plug text-3xl text-cyan-400 mb-4"></i>
+                            <h3 class="text-xl font-semibold text-white mb-2">Seamless Integration</h3>
+                            <p class="text-white opacity-80">Connect with existing tools and data</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-16 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="neo-card p-12">
+                    <h2 class="text-4xl font-bold text-white mb-6">
+                        Stop Juggling. Start Profiting.
+                    </h2>
+                    <p class="text-xl text-white opacity-90 mb-8">
+                        Transform your business operations into profit-generating assets with Pocket Boss. Easy to start, quick to profit, built for unlimited growth.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="text-2xl font-bold text-green-400">Average Revenue Increase: $111,867/year</div>
+                        <div class="text-lg text-white opacity-80">For just $1,188 annual investment</div>
+                        <div class="text-3xl font-bold revenue-metric">ROI: 9,322%</div>
+                    </div>
+
+                    <button class="mt-8 bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold py-4 px-8 rounded-full text-xl hover:from-green-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 pulse-glow">
+                        Start Your Automated Business Today
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-16 pb-8">
+        <div class="container px-4 mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <!-- <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg">
+                            <span class="text-white font-bold text-xl">Q</span>
+                        </div> -->
+                        <div>
+                            <img class="w-12 h-12 object-contain" src="assets/img/logo.png" alt="logo">
+                        </div>
+                        <h3 class="text-xl font-bold ml-2 text-white">QuantumOS.ai</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        The ultimate AI workforce solution for small businesses - ready in days, with nothing to learn.
+                    </p>
+                    <p class="text-gray-400">
+                        15201 N Cave Creek Rd, Suite B<br> Phoenix, AZ 85032<br> 480-913-0155
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#workflow" class="hover:text-white transition">Workflow Automation</a></li>
+                        <li><a href="#workforce" class="hover:text-white transition">AI Workforce</a></li>
+                        <li><a href="#alli" class="hover:text-white transition">Digital Management</a></li>
+                        <li><a href="#results" class="hover:text-white transition">Business Results</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Contact Us</h3>
+                    <p class="text-gray-400 mb-4">
+                        Text our AI CEO, Alli directly, to learn how we can help your business:
+                    </p>
+                    <a href="tel:+14809130155" class="text-blue-400 font-semibold hover:text-blue-300 transition">
+                        480-913-0155
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <div class="flex flex-col gap-5 justify-between items-center md:flex-row">
+                    <p>© 2025 Quantum OS. All rights reserved.</p>
+                    <div>
+                        <ul class="flex gap-4 text-gray-400">
+                            <li><a href="privacy-policy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                            <li><a href="terms-of-service.html" class="hover:text-white transition">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.14/build/player/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+    <!-- chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script>
+        // Chart.js configurations
+        const chartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: 'white'
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        color: 'white',
+                        callback: function(value) {
+                            return '$' + value.toLocaleString();
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: 'white'
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                }
+            }
+        };
+
+        // Realtor Chart
+        const realtorCtx = document.getElementById('realtorChart').getContext('2d');
+        new Chart(realtorCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Overhead Savings', 'Software Elimination', 'Time Recovery', 'Total Impact'],
+                datasets: [{
+                    label: 'Annual Revenue Increase',
+                    data: [24000, 3600, 120000, 147600],
+                    backgroundColor: [
+                        'rgba(255, 107, 107, 0.8)',
+                        'rgba(78, 205, 196, 0.8)',
+                        'rgba(69, 183, 209, 0.8)',
+                        'rgba(150, 206, 180, 0.8)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 107, 107, 1)',
+                        'rgba(78, 205, 196, 1)',
+                        'rgba(69, 183, 209, 1)',
+                        'rgba(150, 206, 180, 1)'
+                    ],
+                    borderWidth: 2,
+                    borderRadius: 10
+                }]
+            },
+            options: chartOptions
+        });
+
+        // Plumber Chart
+        const plumberCtx = document.getElementById('plumberChart').getContext('2d');
+        new Chart(plumberCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Overhead Savings', 'Software Elimination', 'Time Recovery'],
+                datasets: [{
+                    data: [9600, 2400, 117000],
+                    backgroundColor: [
+                        'rgba(255, 107, 107, 0.8)',
+                        'rgba(78, 205, 196, 0.8)',
+                        'rgba(255, 159, 64, 0.8)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 107, 107, 1)',
+                        'rgba(78, 205, 196, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                ...chartOptions,
+                plugins: {
+                    ...chartOptions.plugins,
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.label + ': $' + context.parsed.toLocaleString();
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Yoga Studio Chart
+        const yogaCtx = document.getElementById('yogaChart').getContext('2d');
+        new Chart(yogaCtx, {
+            type: 'line',
+            data: {
+                labels: ['Overhead Savings', 'Software Elimination', 'Time Recovery'],
+                datasets: [{
+                    label: 'Annual Revenue Increase',
+                    data: [14400, 3000, 41600],
+                    borderColor: 'rgba(147, 51, 234, 1)',
+                    backgroundColor: 'rgba(147, 51, 234, 0.1)',
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4,
+                    pointBackgroundColor: 'rgba(147, 51, 234, 1)',
+                    pointBorderColor: 'white',
+                    pointBorderWidth: 2,
+                    pointRadius: 8
+                }]
+            },
+            options: chartOptions
+        });
+
+        // Add interactive animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.neo-card, .metric-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'all 0.6s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</html>
