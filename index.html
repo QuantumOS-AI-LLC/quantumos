@@ -71,11 +71,12 @@
     <!-- Header -->
     <header class="header sticky top-0 py-4">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <div class="leading-none">
-                <a class="inline-block" href="/">
-                    <img class="w-56 object-contain" src="assets/img/mainstreet.png" alt="mainstreet">
-                </a>
-            </div>
+            <a class="flex items-center" href="/">
+                <div>
+                    <img class="w-12 h-12 object-contain" src="assets/img/logo.png" alt="logo">
+                </div>
+                <div class="text-xl font-bold ml-2 text-white">QuantumOS.ai</div>
+            </a>
             <div class="header_menu">
                 <div class="flex items-center justify-end lg:hidden mb-6">
                     <button class="w-9 h-9 rounded-lg bg-white bg-opacity-10 border hover:bg-gray-50 transition duration-300 toggle_menu" type="button">
@@ -104,7 +105,7 @@
         </div>
     </header>
     <div id="backdrop" class="toggle_menu"></div>
-    
+
 
     <!-- main -->
     <main class="main">
@@ -268,7 +269,20 @@
                 <div class="mt-20 max-w-5xl mx-auto">
                     <h3 class="text-2xl font-bold text-center mb-10">Automated Processes You'll Never Have to Manage Again</h3>
 
-                    <div class="grid md:grid-cols-2 gap-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Example 1 -->
+                        <div class="glass-card p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="w-12 h-12 rounded-full bg-blue-500 bg-opacity-20 flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            </div>
+                            <h4 class="text-xl font-semibold mb-2">Lead Qualification</h4>
+                            <p class="text-gray-300">
+                                Alli automatically screens all incoming leads, qualifies them based on your criteria, and only escalates those who are most likely to convert.
+                            </p>
+                        </div>
+
                         <!-- Example 2 -->
                         <div class="glass-card p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="200">
                             <div class="w-12 h-12 rounded-full bg-purple-500 bg-opacity-20 flex items-center justify-center mb-4">
@@ -334,6 +348,30 @@
                                     <div class="bg-blue-900 bg-opacity-20 p-3 rounded-md">
                                         <p class="text-sm text-blue-300 italic">
                                             "I answer calls and messages instantly, ensuring no customer ever feels ignored. I can handle multiple conversations simultaneously, with perfect recall of all customer history."
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Role 2 -->
+                        <div class="role-card p-6 rounded-md mb-6" data-aos="fade-right" data-aos-delay="100">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mr-4">
+                                    <div class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                                    </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-2">Lead Qualification Agent</h4>
+                                    <p class="text-gray-300 mb-3">
+                                        Screens all leads using your specific criteria, qualifies prospects, and ensures only the most promising opportunities reach your desk.
+                                    </p>
+                                    <div class="bg-purple-900 bg-opacity-20 p-3 rounded-md">
+                                        <p class="text-sm text-purple-300 italic">
+                                            "I evaluate every lead against your ideal customer profile, asking the right qualifying questions and nurturing prospects until they're ready to buy."
                                         </p>
                                     </div>
                                 </div>
@@ -676,6 +714,14 @@
                                 </p>
                             </div>
 
+                            <!-- Capability 2 -->
+                            <div class="glass-card p-6 rounded-xl" data-aos="fade-left" data-aos-delay="100">
+                                <h4 class="text-xl font-semibold mb-3">Complete Lead Management</h4>
+                                <p class="text-gray-300">
+                                    From capturing inquiries to qualifying prospects to nurturing relationships, Alli handles the entire lead process. She identifies high-value opportunities, asks the right qualifying questions, and ensures no promising lead falls through the cracks.
+                                </p>
+                            </div>
+
                             <!-- Capability 3 -->
                             <div class="glass-card p-6 rounded-xl" data-aos="fade-left" data-aos-delay="200">
                                 <h4 class="text-xl font-semibold mb-3">Digital Workforce Orchestration</h4>
@@ -727,7 +773,11 @@
                                     A local handyman service was struggling with lead management and customer follow-ups. After implementing Quantum OS, they saw dramatic improvements in their business performance.
                                 </p>
 
-                                <div class="grid grid-cols-2 md:grid-cols-2 gap-4 mb-6">
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                                    <div class="bg-purple-900 bg-opacity-20 p-4 rounded-lg text-center">
+                                        <div class="text-3xl font-bold text-purple-400 mb-1">367%</div>
+                                        <div class="text-sm text-gray-300">Increase in qualified leads</div>
+                                    </div>
                                     <div class="bg-blue-900 bg-opacity-20 p-4 rounded-lg text-center">
                                         <div class="text-3xl font-bold text-blue-400 mb-1">84%</div>
                                         <div class="text-sm text-gray-300">Reduction in response time</div>
@@ -739,7 +789,7 @@
                                 </div>
 
                                 <div class="italic text-gray-400">
-                                    "Quantum OS completely transformed our business. Alli handles all our customer inquiries and manages scheduling - all without us lifting a finger. We're booking more jobs and making more money while working less hours."
+                                    "Quantum OS completely transformed our business. Alli handles all our customer inquiries, qualifies leads, and manages scheduling - all without us lifting a finger. We're booking more jobs and making more money while working less hours."
                                     <div class="mt-2 font-semibold">- Michael T., Owner</div>
                                 </div>
                             </div>
@@ -748,25 +798,61 @@
 
                     <!-- Before & After Comparisons -->
                     <h3 class="text-2xl font-bold text-center mb-8">Before & After Quantum OS</h3>
-                    <div class="max-w-2xl mx-auto">
-                        <div class="grid md:grid-cols-1 gap-6">
-    
-                            <!-- Comparison 3 -->
-                            <div class="glass-card p-6 rounded-xl" data-aos="flip-left" data-aos-delay="200">
-                                <h4 class="text-xl font-semibold mb-4 text-center">Owner Time Savings</h4>
-    
-                                <div class="flex flex-col space-y-4">
-                                    <div class="bg-red-900 bg-opacity-20 p-4 rounded-lg">
-                                        <div class="text-sm text-gray-300 mb-1">Before:</div>
-                                        <div class="font-bold">22 hours/week on admin</div>
-                                    </div>
-                                    <div class="bg-green-900 bg-opacity-20 p-4 rounded-lg">
-                                        <div class="text-sm text-gray-300 mb-1">After:</div>
-                                        <div class="font-bold">3 hours/week on admin</div>
-                                    </div>
-                                    <div class="text-center text-sm text-gray-400 mt-2">
-                                        86% reduction in administrative work
-                                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Comparison 1 -->
+                        <div class="glass-card p-6 rounded-xl" data-aos="flip-left">
+                            <h4 class="text-xl font-semibold mb-4 text-center">Lead Response Time</h4>
+
+                            <div class="flex flex-col space-y-4">
+                                <div class="bg-red-900 bg-opacity-20 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-300 mb-1">Before:</div>
+                                    <div class="font-bold">4.7 hours average</div>
+                                </div>
+                                <div class="bg-green-900 bg-opacity-20 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-300 mb-1">After:</div>
+                                    <div class="font-bold">2 minutes or less</div>
+                                </div>
+                                <div class="text-center text-sm text-gray-400 mt-2">
+                                    Instant response to all inquiries, 24/7/365
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comparison 2 -->
+                        <div class="glass-card p-6 rounded-xl" data-aos="flip-left" data-aos-delay="100">
+                            <h4 class="text-xl font-semibold mb-4 text-center">Lead Conversion Rate</h4>
+
+                            <div class="flex flex-col space-y-4">
+                                <div class="bg-red-900 bg-opacity-20 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-300 mb-1">Before:</div>
+                                    <div class="font-bold">18% of inquiries</div>
+                                </div>
+                                <div class="bg-green-900 bg-opacity-20 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-300 mb-1">After:</div>
+                                    <div class="font-bold">42% of inquiries</div>
+                                </div>
+                                <div class="text-center text-sm text-gray-400 mt-2">
+                                    More than doubled conversion rate
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comparison 3 -->
+                        <div class="glass-card p-6 rounded-xl" data-aos="flip-left" data-aos-delay="200">
+                            <h4 class="text-xl font-semibold mb-4 text-center">Owner Time Savings</h4>
+
+                            <div class="flex flex-col space-y-4">
+                                <div class="bg-red-900 bg-opacity-20 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-300 mb-1">Before:</div>
+                                    <div class="font-bold">22 hours/week on admin</div>
+                                </div>
+                                <div class="bg-green-900 bg-opacity-20 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-300 mb-1">After:</div>
+                                    <div class="font-bold">3 hours/week on admin</div>
+                                </div>
+                                <div class="text-center text-sm text-gray-400 mt-2">
+                                    86% reduction in administrative work
                                 </div>
                             </div>
                         </div>
@@ -787,7 +873,7 @@
                 </div>
 
                 <div class="max-w-5xl mx-auto">
-                    <div class="grid md:grid-cols-1 gap-8">
+                    <div class="grid md:grid-cols-2 gap-8">
                         <!-- Partner 1 -->
                         <div class="glass-card p-8 rounded-xl" data-aos="fade-up">
                             <div class="flex items-center mb-6">
@@ -809,7 +895,46 @@
                             </div>
                         </div>
 
+                        <!-- Partner 2 -->
+                        <div class="glass-card p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg mr-4">
+                                    <span class="text-white font-bold text-2xl">TP</span>
+                                </div>
+                                <h3 class="text-2xl font-bold">TextPert</h3>
+                            </div>
+                            <p class="text-gray-300 mb-6">
+                                Our integration with TextPert supercharges our SMS lead generation capabilities, giving your business access to the most advanced text-based communication platform available.
+                            </p>
+                            <div class="bg-purple-900 bg-opacity-20 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">Partnership Benefits:</h4>
+                                <ul class="list-disc pl-5 text-gray-300 space-y-1">
+                                    <li>Industry-leading SMS deliverability rates</li>
+                                    <li>Enhanced lead qualification through texts</li>
+                                    <li>Seamless multi-channel communication</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Final CTA Section -->
+            <section class="mb-16 relative">
+                <div class="blob-animation"></div>
+                <div class="blur-bg" style="bottom: 20%; left: 10%;"></div>
+
+                <div class="max-w-4xl mx-auto text-center glass-card p-6 md:p-12 rounded-xl relative z-10" data-aos="zoom-in">
+                    <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
+                    <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                        Join hundreds of small business owners who are saving time, increasing revenue, and growing their business with Quantum OS.
+                    </p>
+                    <a href="sms:+14809130155" class="btn-gradient text-white font-semibold py-4 px-10 rounded-xl text-center shadow-lg inline-block">
+                        Text 480-913-0155 to Talk to Alli Today
+                    </a>
+                    <p class="text-gray-400 mt-4">
+                        No commitment required. Learn how Quantum OS can work for your specific business.
+                    </p>
                 </div>
             </section>
 
@@ -821,11 +946,12 @@
         <div class="container px-4 mx-auto">
             <div class="grid md:grid-cols-3 gap-8 mb-12">
                 <div>
-                    <div class="leading-none mb-5">
-                        <a class="inline-block" href="/">
-                            <img class="w-56 object-contain" src="assets/img/mainstreet.png" alt="mainstreet">
-                        </a>
-                    </div>
+                    <a class="flex items-center mb-4" href="/">
+                        <div>
+                            <img class="w-12 h-12 object-contain" src="assets/img/logo.png" alt="logo">
+                        </div>
+                        <div class="text-xl font-bold ml-2 text-white">QuantumOS.ai</div>
+                    </a>
                     <p class="text-gray-400 mb-4">
                         The ultimate AI workforce solution for small businesses - ready in days, with nothing to learn.
                     </p>
@@ -833,7 +959,7 @@
                         15201 N Cave Creek Rd, Suite B<br> Phoenix, AZ 85032<br> 480-913-0155
                     </p>
                 </div>
-    
+
                 <div>
                     <h3 class="text-lg font-bold text-white mb-4">Services</h3>
                     <ul class="space-y-2 text-gray-400">
@@ -843,7 +969,7 @@
                         <li><a href="#results" class="hover:text-white transition">Business Results</a></li>
                     </ul>
                 </div>
-    
+
                 <div>
                     <h3 class="text-lg font-bold text-white mb-4">Contact Us</h3>
                     <p class="text-gray-400 mb-4">
@@ -854,7 +980,7 @@
                     </a>
                 </div>
             </div>
-    
+
             <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
                 <div class="flex flex-col gap-5 justify-between items-center md:flex-row">
                     <p>© 2025 Quantum OS. All rights reserved.</p>
