@@ -54,16 +54,19 @@
     <div id="backdrop" class="toggle_menu"></div>
 
     <!-- main -->
-    <main class="main bg-white text-gray-700">
+    <main class="main">
         <!-- Hero Section -->
-        <section class="hero_section flex items-center">
+        <section class="flex items-center relative">
+            <div class="blob-animation"></div>
+            <div class="blur-bg" style="top: -10%; left: -10%;"></div>
+            <div class="blur-bg" style="top: 20%; right: -20%;"></div>
             <div class="container mx-auto px-4 py-20">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                     <div>
                         <h1 class="text-4xl lg:text-5xl font-bold mb-6">Enterprise AI Workforce Solutions</h1>
                         <p class="text-xl mb-8 text-gray-200">QuantumOS.ai builds everything for you - a turnkey solution that works out of the box. We automate your business processes, generate leads, and increase productivity without any technical know-how required from your team.</p>
                         <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                            <a href="#services" class="bg-green-500 hover:bg-green-600 text-white text-center font-medium py-3 px-6 rounded-md transition duration-300">Explore Solutions</a>
+                            <a href="#services" class="btn-gradient text-center font-medium py-3 px-6 rounded-md transition duration-300">Explore Solutions</a>
                             <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-800 text-center text-white font-medium py-3 px-6 rounded-md transition duration-300">Schedule Demo</a>
                         </div>
                     </div>
@@ -77,18 +80,18 @@
         </section>
 
         <!-- About the team Section -->
-        <section class="py-20 bg-white">
+        <section class="py-20 bg-gray-50 bg-opacity-10">
             <div class="container mx-auto px-4">
                 <div class="max-w-3xl mx-auto mb-10">
                     <h2 class="text-3xl font-bold mb-4 section-heading">About The Team</h2>
-                    <p class="text-lg text-gray-600">enterprise AI Automation Team at QuantumOS.ai</p>
+                    <p class="text-lg text-gray-200">enterprise AI Automation Team at QuantumOS.ai</p>
                 </div>
 
                 <div class="max-w-4xl mx-auto">
-                    <p class="text-gray-600 mb-4">
+                    <p class="text-gray-200 mb-4">
                         At QuantumOS.ai, our enterprise automation team specializes in transforming operations for high-growth companies and Fortune 500 organizations through strategic AI integration and business process automation.
                     </p>
-                    <ul class="text-gray-600 mb-4">
+                    <ul class="text-gray-200 mb-4">
                         <li>
                             <i class="fa-solid fa-bolt text-yellow-500"></i> Saved $4.2M annually for a global supply chain leader through AI-driven workflow automation
                         </li>
@@ -100,14 +103,14 @@
                         </li>
                     </ul>
 
-                    <p class="text-gray-600 mb-4">
+                    <p class="text-gray-200 mb-4">
                         We start every engagement with a deep business process analysis to identify areas of waste, inefficiency, and manual bottlenecks. From there, our team designs and implements fully customized automation systems using platforms like Make.com, Zapier, and proprietary AI workflows tailored to each client’s needs.
                     </p>
-                    <p class="text-gray-600 mb-4">
+                    <p class="text-gray-200 mb-4">
                         Our solutions automate critical functions including:
                     </p>
 
-                    <ul class="text-gray-600 list-disc pl-5 mb-4">
+                    <ul class="text-gray-200 list-disc pl-5 mb-4">
                         <li>
                             Customer acquisition and support
                         </li>
@@ -125,11 +128,11 @@
                         </li>
                     </ul>
 
-                    <p class="text-gray-600 mb-4">
+                    <p class="text-gray-200 mb-4">
                         Our combined expertise includes:
                     </p>
 
-                    <ul class="text-gray-600 mb-4">
+                    <ul class="text-gray-200 mb-4">
                         <li>
                             <i class="fa-solid fa-square-check text-green-500 mr-1"></i> End-to-end workflow automation
                         </li>
@@ -156,29 +159,31 @@
                         </li>
                     </ul>
 
-                    <p class="text-gray-600 mb-4">QuantumOS.ai delivers automation systems that typically pay for themselves in under 90 days and continue generating value over time. Whether your goal is full digital transformation, AI-enabled forecasting, or streamlining operations at scale—our team builds automation that drives measurable, lasting results.</p>
+                    <p class="text-gray-200 mb-4">QuantumOS.ai delivers automation systems that typically pay for themselves in under 90 days and continue generating value over time. Whether your goal is full digital transformation, AI-enabled forecasting, or streamlining operations at scale—our team builds automation that drives measurable, lasting results.</p>
                 </div>
             </div>
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-4">
+        <section id="services" class="py-20 relative">
+            <div class="blur-bg" style="top: 30%; left: 10%;"></div>
+            <div class="blur-bg" style="top: 0%; right: 10%;"></div>
+            <div class="container mx-auto px-4 relative">
                 <div class="max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl font-bold mb-4 section-heading">Enterprise AI Services</h2>
-                    <p class="text-lg text-gray-600">Our comprehensive suite of AI-powered enterprise solutions are designed to transform your organization's operations, efficiency, and productivity.</p>
+                    <p class="text-lg text-gray-200">Our comprehensive suite of AI-powered enterprise solutions are designed to transform your organization's operations, efficiency, and productivity.</p>
                 </div>
     
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Service 1 -->
-                    <div class="service-card bg-white">
+                    <div class="service-card glass-card">
                         <div class="p-8">
                             <div class="service-icon mb-4">
                                 <i class="fas fa-robot"></i>
                             </div>
                             <h3 class="text-xl font-semibold mb-3">Chatbot AI Automations</h3>
-                            <p class="text-gray-600 mb-4">We design and implement AI chatbots tailored to your business needs. These bots handle customer service, lead generation, and various tasks, freeing your team to focus on strategic initiatives.</p>
-                            <ul class="text-gray-600 space-y-2">
+                            <p class="text-gray-200 mb-4">We design and implement AI chatbots tailored to your business needs. These bots handle customer service, lead generation, and various tasks, freeing your team to focus on strategic initiatives.</p>
+                            <ul class="text-gray-200 space-y-2">
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> 24/7 customer support automation</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Lead qualification and nurturing</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Seamless integration with existing systems</li>
@@ -187,14 +192,14 @@
                     </div>
     
                     <!-- Service 2 -->
-                    <div class="service-card bg-white">
+                    <div class="service-card glass-card">
                         <div class="p-8">
                             <div class="service-icon mb-4">
                                 <i class="fas fa-cogs"></i>
                             </div>
                             <h3 class="text-xl font-semibold mb-3">ERP/CRM Software Automation</h3>
-                            <p class="text-gray-600 mb-4">Our AI-powered CRM automation systems build custom workflows that automate your customer relationship management processes with no technical expertise required.</p>
-                            <ul class="text-gray-600 space-y-2">
+                            <p class="text-gray-200 mb-4">Our AI-powered CRM automation systems build custom workflows that automate your customer relationship management processes with no technical expertise required.</p>
+                            <ul class="text-gray-200 space-y-2">
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Complete process automation</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Out-of-the-box functionality</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Ongoing optimization without human input</li>
@@ -203,14 +208,14 @@
                     </div>
     
                     <!-- Service 3 -->
-                    <div class="service-card bg-white">
+                    <div class="service-card glass-card">
                         <div class="p-8">
                             <div class="service-icon mb-4">
                                 <i class="fas fa-database"></i>
                             </div>
                             <h3 class="text-xl font-semibold mb-3">Database Management</h3>
-                            <p class="text-gray-600 mb-4">We connect all your business data sources into one centralized system and implement AI analysis tools that deliver actionable insights without hiring data specialists.</p>
-                            <ul class="text-gray-600 space-y-2">
+                            <p class="text-gray-200 mb-4">We connect all your business data sources into one centralized system and implement AI analysis tools that deliver actionable insights without hiring data specialists.</p>
+                            <ul class="text-gray-200 space-y-2">
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Multi-location data centralization</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> AI-driven business intelligence</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Automated reporting and analysis</li>
@@ -219,14 +224,14 @@
                     </div>
     
                     <!-- Service 4 -->
-                    <div class="service-card bg-white">
+                    <div class="service-card glass-card">
                         <div class="p-8">
                             <div class="service-icon mb-4">
                                 <i class="fas fa-check-circle"></i>
                             </div>
                             <h3 class="text-xl font-semibold mb-3">QA Testing</h3>
-                            <p class="text-gray-600 mb-4">We create automated systems that test, validate, and optimize your business workflows, increasing reliability and reducing errors with continuous monitoring.</p>
-                            <ul class="text-gray-600 space-y-2">
+                            <p class="text-gray-200 mb-4">We create automated systems that test, validate, and optimize your business workflows, increasing reliability and reducing errors with continuous monitoring.</p>
+                            <ul class="text-gray-200 space-y-2">
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Automated business process optimization</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Continuous monitoring and improvement</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Error reduction and reliability enhancement</li>
@@ -235,14 +240,14 @@
                     </div>
     
                     <!-- Service 5 -->
-                    <div class="service-card bg-white">
+                    <div class="service-card glass-card">
                         <div class="p-8">
                             <div class="service-icon mb-4">
                                 <i class="fas fa-bullhorn"></i>
                             </div>
                             <h3 class="text-xl font-semibold mb-3">Lead Generation & Telemarketing</h3>
-                            <p class="text-gray-600 mb-4">Our AI systems qualify leads, nurture relationships, and follow up with customers automatically, increasing conversion rates without adding staff.</p>
-                            <ul class="text-gray-600 space-y-2">
+                            <p class="text-gray-200 mb-4">Our AI systems qualify leads, nurture relationships, and follow up with customers automatically, increasing conversion rates without adding staff.</p>
+                            <ul class="text-gray-200 space-y-2">
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> AI-powered lead qualification</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Automated relationship nurturing</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> 24/7 operation with continuous improvement</li>
@@ -251,14 +256,14 @@
                     </div>
     
                     <!-- Service 6 -->
-                    <div class="service-card bg-white">
+                    <div class="service-card glass-card">
                         <div class="p-8">
                             <div class="service-icon mb-4">
                                 <i class="fas fa-network-wired"></i>
                             </div>
                             <h3 class="text-xl font-semibold mb-3">Network & System Administration</h3>
-                            <p class="text-gray-600 mb-4">We implement and manage complete digital workforce solutions that integrate with your existing systems, providing enterprise-level automation.</p>
-                            <ul class="text-gray-600 space-y-2">
+                            <p class="text-gray-200 mb-4">We implement and manage complete digital workforce solutions that integrate with your existing systems, providing enterprise-level automation.</p>
+                            <ul class="text-gray-200 space-y-2">
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Enterprise AI integration</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Seamless system management</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Zero technical expertise required</li>
@@ -267,14 +272,14 @@
                     </div>
     
                     <!-- Service 7 -->
-                    <div class="service-card bg-white">
+                    <div class="service-card glass-card">
                         <div class="p-8">
                             <div class="service-icon mb-4">
                                 <i class="fas fa-pen-fancy"></i>
                             </div>
                             <h3 class="text-xl font-semibold mb-3">Content Writing</h3>
-                            <p class="text-gray-600 mb-4">Our AI systems create, optimize, and distribute marketing content across all channels, maintaining consistent brand messaging with minimal oversight.</p>
-                            <ul class="text-gray-600 space-y-2">
+                            <p class="text-gray-200 mb-4">Our AI systems create, optimize, and distribute marketing content across all channels, maintaining consistent brand messaging with minimal oversight.</p>
+                            <ul class="text-gray-200 space-y-2">
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> AI-powered content creation</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Multi-channel distribution</li>
                                 <li><i class="fas fa-check text-green-500 mr-2"></i> Brand-consistent messaging at scale</li>
@@ -290,7 +295,7 @@
             <div class="container mx-auto px-4">
                 <div class="max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl font-bold mb-4 section-heading">Our Turnkey Implementation Process</h2>
-                    <p class="text-lg text-gray-600">We handle the entire implementation process from start to finish, with no technical expertise required from your team.</p>
+                    <p class="text-lg text-gray-200">We handle the entire implementation process from start to finish, with no technical expertise required from your team.</p>
                 </div>
     
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -298,25 +303,25 @@
                         <div class="process-step">
                             <div class="step-number">1</div>
                             <h3 class="text-xl font-semibold mb-2">Business Analysis</h3>
-                            <p class="text-gray-600">Our team analyzes your business operations, identifying key processes that can be automated for maximum efficiency.</p>
+                            <p class="text-gray-200">Our team analyzes your business operations, identifying key processes that can be automated for maximum efficiency.</p>
                         </div>
     
                         <div class="process-step">
                             <div class="step-number">2</div>
                             <h3 class="text-xl font-semibold mb-2">Custom Workflow Design</h3>
-                            <p class="text-gray-600">We design automated workflows tailored specifically to your business needs and objectives.</p>
+                            <p class="text-gray-200">We design automated workflows tailored specifically to your business needs and objectives.</p>
                         </div>
     
                         <div class="process-step">
                             <div class="step-number">3</div>
                             <h3 class="text-xl font-semibold mb-2">Seamless Implementation</h3>
-                            <p class="text-gray-600">Our team implements the entire system for you - nothing to install, configure, or learn.</p>
+                            <p class="text-gray-200">Our team implements the entire system for you - nothing to install, configure, or learn.</p>
                         </div>
     
                         <div class="process-step">
                             <div class="step-number">4</div>
                             <h3 class="text-xl font-semibold mb-2">Continuous Optimization</h3>
-                            <p class="text-gray-600">Our AI continuously monitors performance and optimizes workflows based on real-world results.</p>
+                            <p class="text-gray-200">Our AI continuously monitors performance and optimizes workflows based on real-world results.</p>
                         </div>
                     </div>
     
@@ -334,7 +339,7 @@
             <div class="container mx-auto px-4">
                 <div class="max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl font-bold mb-4 section-heading">Enterprise AI Capabilities</h2>
-                    <p class="text-lg text-gray-600">Our advanced AI systems provide enterprise-grade capabilities with zero technical knowledge required from your team.</p>
+                    <p class="text-lg text-gray-200">Our advanced AI systems provide enterprise-grade capabilities with zero technical knowledge required from your team.</p>
                 </div>
     
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -345,22 +350,22 @@
                     <div>
                         <div class="ai-feature">
                             <h3 class="text-xl font-semibold mb-2">Next Evolution Beyond Model Context Protocol</h3>
-                            <p class="text-gray-600">Our AI doesn't just remember information - it truly understands it, combining text, visual, and contextual data to see the complete picture of your business needs.</p>
+                            <p class="text-gray-200">Our AI doesn't just remember information - it truly understands it, combining text, visual, and contextual data to see the complete picture of your business needs.</p>
                         </div>
     
                         <div class="ai-feature">
                             <h3 class="text-xl font-semibold mb-2">Complete Enterprise Process Management</h3>
-                            <p class="text-gray-600">From capturing data to qualifying opportunities to managing workflows, our AI handles entire business processes end-to-end.</p>
+                            <p class="text-gray-200">From capturing data to qualifying opportunities to managing workflows, our AI handles entire business processes end-to-end.</p>
                         </div>
     
                         <div class="ai-feature">
                             <h3 class="text-xl font-semibold mb-2">Digital Workforce Orchestration</h3>
-                            <p class="text-gray-600">Our AI coordinates your entire digital workforce, assigning tasks to specialized AI workers and ensuring seamless collaboration.</p>
+                            <p class="text-gray-200">Our AI coordinates your entire digital workforce, assigning tasks to specialized AI workers and ensuring seamless collaboration.</p>
                         </div>
     
                         <div class="ai-feature">
                             <h3 class="text-xl font-semibold mb-2">Enterprise-Grade Communication</h3>
-                            <p class="text-gray-600">With advanced communication capabilities, our AI adapts tone and approach to each situation, representing your brand perfectly.</p>
+                            <p class="text-gray-200">With advanced communication capabilities, our AI adapts tone and approach to each situation, representing your brand perfectly.</p>
                         </div>
                     </div>
                 </div>
@@ -372,7 +377,7 @@
             <div class="container mx-auto px-4">
                 <div class="max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl font-bold mb-4 section-heading">Our Enterprise AI Expertise</h2>
-                    <p class="text-lg text-gray-600">We combine deep expertise across multiple AI disciplines to deliver comprehensive enterprise solutions.</p>
+                    <p class="text-lg text-gray-200">We combine deep expertise across multiple AI disciplines to deliver comprehensive enterprise solutions.</p>
                 </div>
     
                 <div class="flex flex-wrap justify-center">
@@ -399,7 +404,7 @@
             <div class="container mx-auto px-4">
                 <div class="max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl font-bold mb-4 section-heading">The QuantumOS Difference</h2>
-                    <p class="text-lg text-gray-600">See how our approach transforms enterprise AI implementation compared to traditional solutions.</p>
+                    <p class="text-lg text-gray-200">See how our approach transforms enterprise AI implementation compared to traditional solutions.</p>
                 </div>
     
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -409,27 +414,27 @@
                             <ul class="space-y-4">
                                 <li class="flex items-start">
                                     <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-600">Weeks or months to implement</span>
+                                    <span class="text-gray-200">Weeks or months to implement</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-600">Extensive training required for your team</span>
+                                    <span class="text-gray-200">Extensive training required for your team</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-600">Need to learn complex tools and interfaces</span>
+                                    <span class="text-gray-200">Need to learn complex tools and interfaces</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-600">Ongoing maintenance and updates you must manage</span>
+                                    <span class="text-gray-200">Ongoing maintenance and updates you must manage</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-600">You're responsible for ensuring it works properly</span>
+                                    <span class="text-gray-200">You're responsible for ensuring it works properly</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-600">High technical knowledge required</span>
+                                    <span class="text-gray-200">High technical knowledge required</span>
                                 </li>
                             </ul>
                         </div>
@@ -441,27 +446,27 @@
                             <ul class="space-y-4">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-600">Ready in days, not months - we build everything for you using our proven implementation framework</span>
+                                    <span class="text-gray-200">Ready in days, not months - we build everything for you using our proven implementation framework</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-600">Zero training required - our solutions work out-of-the-box with intuitive interfaces designed for business users</span>
+                                    <span class="text-gray-200">Zero training required - our solutions work out-of-the-box with intuitive interfaces designed for business users</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-600">Simple interface designed specifically for busy enterprise teams with no technical complexity</span>
+                                    <span class="text-gray-200">Simple interface designed specifically for busy enterprise teams with no technical complexity</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-600">We manage all updates and improvements - your system continuously evolves and improves automatically</span>
+                                    <span class="text-gray-200">We manage all updates and improvements - your system continuously evolves and improves automatically</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-600">Fully managed solution with ongoing enterprise-grade support and proactive optimization</span>
+                                    <span class="text-gray-200">Fully managed solution with ongoing enterprise-grade support and proactive optimization</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-600">No technical knowledge needed whatsoever - we handle all the complex implementation details</span>
+                                    <span class="text-gray-200">No technical knowledge needed whatsoever - we handle all the complex implementation details</span>
                                 </li>
                             </ul>
                         </div>
@@ -475,7 +480,7 @@
             <div class="container mx-auto px-4">
                 <div class="max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl font-bold mb-4 section-heading">Client Success Stories</h2>
-                    <p class="text-lg text-gray-600">See the transformative results our enterprise solutions have delivered.</p>
+                    <p class="text-lg text-gray-200">See the transformative results our enterprise solutions have delivered.</p>
                 </div>
     
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -489,7 +494,7 @@
                                     <i class="fas fa-star text-yellow-400"></i>
                                     <i class="fas fa-star text-yellow-400"></i>
                                 </div>
-                                <p class="text-gray-600 italic mb-6">"QuantumOS completely transformed our enterprise operations. Their AI system handles all our customer inquiries, qualifies leads, and manages workflows - all without our teams needing any technical training. We've increased
+                                <p class="text-gray-200 italic mb-6">"QuantumOS completely transformed our enterprise operations. Their AI system handles all our customer inquiries, qualifies leads, and manages workflows - all without our teams needing any technical training. We've increased
                                     efficiency while reducing operational costs substantially."</p>
                             </div>
                             <div class="mt-auto">
@@ -509,7 +514,7 @@
                                     <i class="fas fa-star text-yellow-400"></i>
                                     <i class="fas fa-star text-yellow-400"></i>
                                 </div>
-                                <p class="text-gray-600 italic mb-6">"The implementation process was incredibly smooth - QuantumOS handled everything from analysis to deployment. Our AI workforce now manages our entire customer relationship lifecycle, from initial contact through ongoing service,
+                                <p class="text-gray-200 italic mb-6">"The implementation process was incredibly smooth - QuantumOS handled everything from analysis to deployment. Our AI workforce now manages our entire customer relationship lifecycle, from initial contact through ongoing service,
                                     resulting in 45% higher satisfaction scores."</p>
                             </div>
                             <div class="mt-auto">
@@ -528,19 +533,19 @@
                                 <ul class="space-y-4">
                                     <li class="flex items-center">
                                         <span class="text-green-500 font-bold text-xl mr-2">367%</span>
-                                        <span class="text-gray-600">Increase in qualified leads</span>
+                                        <span class="text-gray-200">Increase in qualified leads</span>
                                     </li>
                                     <li class="flex items-center">
                                         <span class="text-green-500 font-bold text-xl mr-2">84%</span>
-                                        <span class="text-gray-600">Reduction in response time</span>
+                                        <span class="text-gray-200">Reduction in response time</span>
                                     </li>
                                     <li class="flex items-center">
                                         <span class="text-green-500 font-bold text-xl mr-2">128%</span>
-                                        <span class="text-gray-600">Increase in monthly revenue</span>
+                                        <span class="text-gray-200">Increase in monthly revenue</span>
                                     </li>
                                     <li class="flex items-center">
                                         <span class="text-green-500 font-bold text-xl mr-2">86%</span>
-                                        <span class="text-gray-600">Reduction in administrative work</span>
+                                        <span class="text-gray-200">Reduction in administrative work</span>
                                     </li>
                                 </ul>
                             </div>
@@ -561,7 +566,7 @@
             <div class="container mx-auto px-4">
                 <div class="max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl font-bold mb-4 section-heading">Our Global Presence</h2>
-                    <p class="text-lg text-gray-600">With offices strategically located across multiple regions, we provide enterprise solutions worldwide.</p>
+                    <p class="text-lg text-gray-200">With offices strategically located across multiple regions, we provide enterprise solutions worldwide.</p>
                 </div>
     
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -571,7 +576,7 @@
                             <div>
                                 <h3 class="text-xl font-semibold mb-2">Phoenix, United States</h3>
                                 <p class="text-gray-500">Primary Location</p>
-                                <p class="text-gray-600 mt-2">Our headquarters houses our enterprise solutions team and primary implementation specialists.</p>
+                                <p class="text-gray-200 mt-2">Our headquarters houses our enterprise solutions team and primary implementation specialists.</p>
                             </div>
                         </div>
                     </div>
@@ -581,7 +586,7 @@
                             <i class="fas fa-map-marker-alt text-green-500 text-2xl mr-4 mt-1"></i>
                             <div>
                                 <h3 class="text-xl font-semibold mb-2">Gilbert, United States</h3>
-                                <p class="text-gray-600 mt-2">Our innovation center focuses on developing cutting-edge AI solutions for enterprise clients.</p>
+                                <p class="text-gray-200 mt-2">Our innovation center focuses on developing cutting-edge AI solutions for enterprise clients.</p>
                             </div>
                         </div>
                     </div>
@@ -591,7 +596,7 @@
                             <i class="fas fa-map-marker-alt text-green-500 text-2xl mr-4 mt-1"></i>
                             <div>
                                 <h3 class="text-xl font-semibold mb-2">Cebu City, Philippines</h3>
-                                <p class="text-gray-600 mt-2">Our international development center provides 24/7 support and implementation services for global clients.</p>
+                                <p class="text-gray-200 mt-2">Our international development center provides 24/7 support and implementation services for global clients.</p>
                             </div>
                         </div>
                     </div>
