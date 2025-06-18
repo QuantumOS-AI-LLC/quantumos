@@ -427,7 +427,7 @@ body {
 }
 
 .skill-tag {
-    background-color: #f1f8e9;
+    background-color: #4CAF5021;
     color: #4CAF50;
     border-radius: 20px;
     padding: 0.5rem 1rem;
@@ -442,7 +442,7 @@ body {
     position: relative;
     padding: 1.5rem;
     border-radius: 8px;
-    background-color: white;
+    /* background-color: white; */
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     height: 100%;
@@ -513,7 +513,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     padding: 2rem;
-    background-color: white;
+    /* background-color: white; */
     -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
