@@ -66,9 +66,7 @@
             <div class="circuit-pattern absolute inset-0 opacity-20"></div>
             <div class="container mx-auto px-6 relative z-10">
                 <div class="text-center">
-                    <h1 class="text-6xl font-bold hologram-text mb-4">AirQ</h1>
-                    <p class="text-2xl text-yellow-300 mb-2">Quantum AI Business Management Platform</p>
-                    <p class="text-lg text-gray-300">Technical Specifications & Architecture Documentation</p>
+                    <h1 class="text-6xl font-bold hologram-text">AirQ</h1>
                 </div>
             </div>
         </section>
@@ -106,6 +104,11 @@
                                 <h3 class="font-bold">Edge Computing</h3>
                                 <p class="text-sm text-gray-400">Real-time Processing</p>
                             </div>
+                            <a class="tech-card p-4 rounded-lg" href="sms:+16029130155">
+                                <i class="fa-solid fa-comment-sms text-yellow-400 text-2xl mb-2"></i>
+                                <h3 class="font-bold">Custom Build Order</h3>
+                                <p class="text-sm text-gray-400">Text 602-913-0155</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -233,7 +236,7 @@
 
                     <!-- ROI Improvement Chart -->
                     <div class="tech-card p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold text-yellow-400 mb-6">Business ROI Improvements</h3>
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-6">Employee Hours Saved per Week</h3>
                         <canvas id="roiChart" style="height: 400px;"></canvas>
                     </div>
                 </div>
@@ -838,10 +841,10 @@
         new Chart(roiCtx, {
             type: 'bar',
             data: {
-                labels: ['Month 1', 'Month 3', 'Month 6', 'Month 12', 'Month 18', 'Month 24'],
+                labels: ['Receptionist', 'Billing', 'Customer Service', 'Accounting', 'Dispatch', 'Estimator'],
                 datasets: [{
-                    label: 'ROI Improvement (%)',
-                    data: [150, 340, 670, 1250, 1890, 2340],
+                    label: 'Hour Saved',
+                    data: [40, 40, 40, 30, 50, 47],
                     backgroundColor: 'rgba(255, 215, 0, 0.8)',
                     borderColor: 'rgba(255, 215, 0, 1)',
                     borderWidth: 2
