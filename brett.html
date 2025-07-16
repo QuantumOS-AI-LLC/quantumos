@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Your Digital Profile</title>
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1c2446 0%, #5f3d82 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            min-width: 480px;
+        }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        }
+        
+        .glass-button {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .glass-button:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+        
+        .pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulse-glow {
+            from {
+                box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+            }
+            to {
+                box-shadow: 0 0 30px rgba(99, 102, 241, 0.8);
+            }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .profile-image {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+        }
+        
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .add-to-home-btn {
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(99, 102, 241, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+        }
+        
+        .link-button {
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .link-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+        }
+        
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+            50% { transform: translateY(-100px) rotate(180deg); opacity: 0.5; }
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Animated Particles Background -->
+    <div class="particles" id="particles"></div>
+    
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <div class="glass rounded-3xl p-8 max-w-md w-full mx-auto floating">
+            
+            <!-- Add to Home Screen Button -->
+            <div class="text-center mb-6">
+                <p class="text-sm text-gray-200 mb-3">Tap here to save to your home screen</p>
+                <button id="addToHomeScreen" class="add-to-home-btn text-white px-6 py-3 rounded-full font-semibold text-lg pulse-glow">
+                    <i class="fas fa-download mr-2"></i>Add to Home Screen
+                </button>
+            </div>
+            
+            <!-- Profile Image -->
+            <div class="text-center mb-6">
+                <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden profile-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
+                         alt="Profile" class="w-full h-full object-cover">
+                </div>
+                <h1 class="text-2xl font-bold mb-2">Your Name</h1>
+                <p class="text-gray-200 text-sm leading-relaxed">
+                    Digital creator, entrepreneur, and innovator. Passionate about Web3 technology and building the future of digital experiences.
+                </p>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-3 text-center">Connect</h3>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://twitter.com/yourhandle" class="glass-button p-3 rounded-full social-icon">
+                        <i class="fab fa-twitter text-blue-400 text-xl"></i>
+                    </a>
+                    <a href="https://instagram.com/yourhandle" class="glass-button p-3 rounded-full social-icon">
+                        <i class="fab fa-instagram text-pink-400 text-xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourhandle" class="glass-button p-3 rounded-full social-icon">
+                        <i class="fab fa-linkedin text-blue-500 text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Website Links -->
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-3 text-center">My Work</h3>
+                <div class="space-y-3">
+                    <a href="https://yourwebsite.com" class="link-button w-full py-3 px-4 rounded-xl block text-center">
+                        <i class="fas fa-globe mr-2"></i>Portfolio Website
+                    </a>
+                    <a href="https://yourblog.com" class="link-button w-full py-3 px-4 rounded-xl block text-center">
+                        <i class="fas fa-blog mr-2"></i>Blog
+                    </a>
+                    <a href="https://yourstore.com" class="link-button w-full py-3 px-4 rounded-xl block text-center">
+                        <i class="fas fa-store mr-2"></i>Online Store
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="space-y-3">
+                <h3 class="text-lg font-semibold mb-3 text-center">Get In Touch</h3>
+                <a href="mailto:your.email@example.com" class="link-button w-full py-3 px-4 rounded-xl block text-center">
+                    <i class="fas fa-envelope mr-2"></i>your.email@example.com
+                </a>
+                <a href="tel:+1234567890" class="link-button w-full py-3 px-4 rounded-xl block text-center">
+                    <i class="fas fa-phone mr-2"></i>+1 (234) 567-890
+                </a>
+            </div>
+            
+            <!-- Footer -->
+            <div class="text-center mt-8 text-xs text-gray-300">
+                <p>Powered by NFC Technology</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        // Initialize particles when page loads
+        window.addEventListener('load', () => {
+            createParticles();
+        });
+        
+        // Add smooth scrolling and touch interactions
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add touch feedback for mobile
+            const buttons = document.querySelectorAll('.glass-button, .link-button');
+            buttons.forEach(button => {
+                button.addEventListener('touchstart', () => {
+                    button.style.transform = 'scale(0.95)';
+                });
+                button.addEventListener('touchend', () => {
+                    button.style.transform = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
