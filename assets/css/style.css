@@ -664,3 +664,39 @@ body {
 .article_container td{
     border: 1px solid gray;
 }
+
+.hero_mobile {
+    position: relative;
+    max-width: 100%;
+    width: 260px;
+}
+
+.hero_mobile::before {
+    content: "";
+    display: block;
+    padding-bottom: 206.7796%;
+    height: 0px;
+}
+
+.hero_mobile>* {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.hero_mobile video {
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 46px;
+    padding: 10px;
+
+    /*  */
+    background: white;
+    background-clip: content-box;
+}
+
+.hero_mobile img {
+    pointer-events: none;
+}
