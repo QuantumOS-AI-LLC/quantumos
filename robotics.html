@@ -59,7 +59,7 @@
     <!-- main -->
     <main class="main text-gray-200">
         <!--  -->
-        <!-- <section>
+        <section>
             <div class="container mx-auto px-4 relative">
                 <div class="blur-bg" style="top: -10%; left: 20%;"></div>
                 <div class="blur-bg" style="top: 20%; right: -20%;"></div>
@@ -68,8 +68,162 @@
                     <video class="w-full rounded-2xl" src="assets/video/robotics-intro.mp4" autoplay muted loop playsinline></video>
                 </div>
             </div>
-        </section> -->
+        </section>
 
+        <!-- ALLI Robotics Feature Comparison Table -->
+        <section class="py-20 font-[Inter] text-gray-100">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-white mb-4">Compare ALLI Humanoid Models</h2>
+                <p class="text-gray-400 mb-12 max-w-2xl mx-auto">
+                    Discover how each ALLI model is engineered for different environments — from personal assistance to enterprise automation.
+                </p>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse text-left text-gray-300 rounded-2xl overflow-hidden">
+                        <thead>
+                            <tr class="bg-gradient-to-r from-blue-800 to-indigo-900 text-white">
+                                <th class="py-4 px-6 text-lg font-semibold text-left">Features</th>
+                                <th class="py-4 px-6 text-lg font-semibold text-center">ALLI Home</th>
+                                <th class="py-4 px-6 text-lg font-semibold text-center">ALLI Pro</th>
+                                <th class="py-4 px-6 text-lg font-semibold text-center">ALLI Enterprise</th>
+                                <th class="py-4 px-6 text-lg font-semibold text-center">ALLI Ultra</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="divide-y divide-zinc-800">
+
+                            <!-- Voice AI -->
+                            <tr class="hover:bg-zinc-900/40 transition">
+                                <td class="py-4 px-6 font-medium text-gray-200">
+                                    <i class="fa-solid fa-microphone-lines mr-2 text-blue-400"></i>Voice AI Assistant
+                                </td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+
+                            <!-- Facial Recognition -->
+                            <tr class="hover:bg-zinc-900/40 transition">
+                                <td class="py-4 px-6 font-medium text-gray-200">
+                                    <i class="fa-solid fa-face-smile mr-2 text-blue-400"></i>Facial & Emotion Recognition
+                                </td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+
+                            <!-- Camera Vision -->
+                            <tr class="hover:bg-zinc-900/40 transition">
+                                <td class="py-4 px-6 font-medium text-gray-200">
+                                    <i class="fa-solid fa-camera mr-2 text-blue-400"></i>4K Vision & Object Detection
+                                </td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+
+                            <!-- Autonomous Navigation -->
+                            <tr class="hover:bg-zinc-900/40 transition">
+                                <td class="py-4 px-6 font-medium text-gray-200">
+                                    <i class="fa-solid fa-location-crosshairs mr-2 text-blue-400"></i>Autonomous Navigation
+                                </td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+
+                            <!-- Mobility System -->
+                            <tr class="hover:bg-zinc-900/40 transition">
+                                <td class="py-4 px-6 font-medium text-gray-200">
+                                    <i class="fa-solid fa-person-walking mr-2 text-blue-400"></i>Mobility System (Leg/Wheel)
+                                </td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+
+                            <!-- Cloud AI Sync -->
+                            <tr class="hover:bg-zinc-900/40 transition">
+                                <td class="py-4 px-6 font-medium text-gray-200">
+                                    <i class="fa-solid fa-cloud mr-2 text-blue-400"></i>Cloud Neural Sync
+                                </td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+
+                            <!-- Smart Home Integration -->
+                            <tr class="hover:bg-zinc-900/40 transition">
+                                <td class="py-4 px-6 font-medium text-gray-200">
+                                    <i class="fa-solid fa-house-signal mr-2 text-blue-400"></i>Smart Home Integration
+                                </td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+
+                            <!-- Safety & Collision Detection -->
+                            <tr class="hover:bg-zinc-900/40 transition">
+                                <td class="py-4 px-6 font-medium text-gray-200">
+                                    <i class="fa-solid fa-shield-halved mr-2 text-blue-400"></i>Safety & Collision Detection
+                                </td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+
+                            <!-- AI Learning Capability -->
+                            <tr class="hover:bg-zinc-900/40 transition">
+                                <td class="py-4 px-6 font-medium text-gray-200">
+                                    <i class="fa-solid fa-brain mr-2 text-blue-400"></i>Self-Learning AI
+                                </td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+
+                            <!-- Pricing -->
+                            <tr class="hover:bg-zinc-900/40 transition">
+                                <td class="py-4 px-6 font-medium text-gray-200">
+                                    <i class="fa-solid fa-dollar-sign mr-2 text-blue-400"></i>Price
+                                </td>
+                                <td class="text-center text-blue-400 font-semibold">$30,000</td>
+                                <td class="text-center text-blue-400 font-semibold">$40,000</td>
+                                <td class="text-center text-blue-400 font-semibold">$150,000</td>
+                                <td class="text-center text-blue-400 font-semibold">$160,000</td>
+                            </tr>
+
+                            <!-- Buttons -->
+                            <tr class="hover:bg-zinc-900/40 transition">
+                                <td></td>
+                                <td class="text-center py-5">
+                                    <button class="bg-white text-black px-5 py-2 rounded-md font-semibold hover:bg-gray-200 transition">Buy</button>
+                                </td>
+                                <td class="text-center py-5">
+                                    <button class="bg-blue-600 text-white px-5 py-2 rounded-md font-semibold hover:bg-blue-500 transition">Buy</button>
+                                </td>
+                                <td class="text-center py-5">
+                                    <button class="bg-white text-blue-700 px-5 py-2 rounded-md font-semibold hover:bg-gray-100 transition">Contact</button>
+                                </td>
+                                <td class="text-center py-5">
+                                    <button class="border border-white text-white px-5 py-2 rounded-md font-semibold hover:bg-white hover:text-black transition">Pre-Order</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
         
 
         <!-- Features Section -->
@@ -137,7 +291,7 @@
                     </div>
                 </div>
 
-                <video class="w-full rounded-2xl" src="assets/video/robotics-intro.mp4" autoplay muted loop playsinline></video>
+                <!-- <video class="w-full rounded-2xl" src="assets/video/robotics-intro.mp4" autoplay muted loop playsinline></video> -->
 
 
                 <img class="w-full mb-4" src="https://shop.unitree.com/cdn/shop/files/2_07_785645a8-8cf9-4cbf-b7cc-33ad67ed211f_1728x.jpg" alt="">
@@ -147,160 +301,7 @@
             </div>
         </section>
 
-        <!-- ALLI Robotics Feature Comparison Table -->
-        <section class="py-20 font-[Inter] text-gray-100">
-            <div class="max-w-7xl mx-auto px-6 text-center">
-                <h2 class="text-4xl font-bold text-white mb-4">Compare ALLI Humanoid Models</h2>
-                <p class="text-gray-400 mb-12 max-w-2xl mx-auto">
-                    Discover how each ALLI model is engineered for different environments — from personal assistance to enterprise automation.
-                </p>
-
-                <div class="overflow-x-auto">
-                    <table class="w-full border-collapse text-left text-gray-300 rounded-2xl overflow-hidden">
-                        <thead>
-                            <tr class="bg-gradient-to-r from-blue-800 to-indigo-900 text-white">
-                                <th class="py-4 px-6 text-lg font-semibold text-left">Features</th>
-                                <th class="py-4 px-6 text-lg font-semibold text-center">ALLI Home</th>
-                                <th class="py-4 px-6 text-lg font-semibold text-center">ALLI Pro</th>
-                                <th class="py-4 px-6 text-lg font-semibold text-center">ALLI Enterprise</th>
-                                <th class="py-4 px-6 text-lg font-semibold text-center">ALLI Ultra</th>
-                            </tr>
-                        </thead>
-
-                        <tbody class="divide-y divide-zinc-800">
-
-                            <!-- Voice AI -->
-                            <tr class="hover:bg-zinc-900/40 transition">
-                                <td class="py-4 px-6 font-medium text-gray-200">
-                                    <i class="fa-solid fa-microphone-lines mr-2 text-blue-400"></i>Voice AI Assistant
-                                </td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                            </tr>
-
-                            <!-- Facial Recognition -->
-                            <tr class="hover:bg-zinc-900/40 transition">
-                                <td class="py-4 px-6 font-medium text-gray-200">
-                                    <i class="fa-solid fa-face-smile mr-2 text-blue-400"></i>Facial & Emotion Recognition
-                                </td>
-                                <td class="text-center text-gray-500 text-xl"><i class="fa-solid fa-xmark"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                            </tr>
-
-                            <!-- Camera Vision -->
-                            <tr class="hover:bg-zinc-900/40 transition">
-                                <td class="py-4 px-6 font-medium text-gray-200">
-                                    <i class="fa-solid fa-camera mr-2 text-blue-400"></i>4K Vision & Object Detection
-                                </td>
-                                <td class="text-center text-gray-500 text-xl"><i class="fa-solid fa-xmark"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                            </tr>
-
-                            <!-- Autonomous Navigation -->
-                            <tr class="hover:bg-zinc-900/40 transition">
-                                <td class="py-4 px-6 font-medium text-gray-200">
-                                    <i class="fa-solid fa-location-crosshairs mr-2 text-blue-400"></i>Autonomous Navigation
-                                </td>
-                                <td class="text-center text-gray-500 text-xl"><i class="fa-solid fa-xmark"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                            </tr>
-
-                            <!-- Mobility System -->
-                            <tr class="hover:bg-zinc-900/40 transition">
-                                <td class="py-4 px-6 font-medium text-gray-200">
-                                    <i class="fa-solid fa-person-walking mr-2 text-blue-400"></i>Mobility System (Leg/Wheel)
-                                </td>
-                                <td class="text-center text-gray-500 text-xl"><i class="fa-solid fa-xmark"></i></td>
-                                <td class="text-center text-gray-500 text-xl"><i class="fa-solid fa-xmark"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                            </tr>
-
-                            <!-- Cloud AI Sync -->
-                            <tr class="hover:bg-zinc-900/40 transition">
-                                <td class="py-4 px-6 font-medium text-gray-200">
-                                    <i class="fa-solid fa-cloud mr-2 text-blue-400"></i>Cloud Neural Sync
-                                </td>
-                                <td class="text-center text-gray-500 text-xl"><i class="fa-solid fa-xmark"></i></td>
-                                <td class="text-center text-gray-500 text-xl"><i class="fa-solid fa-xmark"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                            </tr>
-
-                            <!-- Smart Home Integration -->
-                            <tr class="hover:bg-zinc-900/40 transition">
-                                <td class="py-4 px-6 font-medium text-gray-200">
-                                    <i class="fa-solid fa-house-signal mr-2 text-blue-400"></i>Smart Home Integration
-                                </td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                            </tr>
-
-                            <!-- Safety & Collision Detection -->
-                            <tr class="hover:bg-zinc-900/40 transition">
-                                <td class="py-4 px-6 font-medium text-gray-200">
-                                    <i class="fa-solid fa-shield-halved mr-2 text-blue-400"></i>Safety & Collision Detection
-                                </td>
-                                <td class="text-center text-gray-500 text-xl"><i class="fa-solid fa-xmark"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                            </tr>
-
-                            <!-- AI Learning Capability -->
-                            <tr class="hover:bg-zinc-900/40 transition">
-                                <td class="py-4 px-6 font-medium text-gray-200">
-                                    <i class="fa-solid fa-brain mr-2 text-blue-400"></i>Self-Learning AI
-                                </td>
-                                <td class="text-center text-gray-500 text-xl"><i class="fa-solid fa-xmark"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                                <td class="text-center text-green-400 text-xl"><i class="fa-solid fa-check"></i></td>
-                            </tr>
-
-                            <!-- Pricing -->
-                            <tr class="hover:bg-zinc-900/40 transition">
-                                <td class="py-4 px-6 font-medium text-gray-200">
-                                    <i class="fa-solid fa-dollar-sign mr-2 text-blue-400"></i>Price
-                                </td>
-                                <td class="text-center text-blue-400 font-semibold">$3,499</td>
-                                <td class="text-center text-blue-400 font-semibold">$6,999</td>
-                                <td class="text-center text-blue-400 font-semibold">$12,999</td>
-                                <td class="text-center text-blue-400 font-semibold">$19,999</td>
-                            </tr>
-
-                            <!-- Buttons -->
-                            <tr class="hover:bg-zinc-900/40 transition">
-                                <td></td>
-                                <td class="text-center py-5">
-                                    <button class="bg-white text-black px-5 py-2 rounded-md font-semibold hover:bg-gray-200 transition">Buy</button>
-                                </td>
-                                <td class="text-center py-5">
-                                    <button class="bg-blue-600 text-white px-5 py-2 rounded-md font-semibold hover:bg-blue-500 transition">Buy</button>
-                                </td>
-                                <td class="text-center py-5">
-                                    <button class="bg-white text-blue-700 px-5 py-2 rounded-md font-semibold hover:bg-gray-100 transition">Contact</button>
-                                </td>
-                                <td class="text-center py-5">
-                                    <button class="border border-white text-white px-5 py-2 rounded-md font-semibold hover:bg-white hover:text-black transition">Pre-Order</button>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
+        
 
     </main>
 
