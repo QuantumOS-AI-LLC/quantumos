@@ -700,3 +700,6 @@ body {
 .hero_mobile img {
     pointer-events: none;
 }
+[id]{
+    scroll-margin-top: 90px;
+}
