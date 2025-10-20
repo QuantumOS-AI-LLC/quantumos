@@ -242,13 +242,30 @@
                     </button>
                 </div>
                 <nav>
-                    <ul class="flex flex-col lg:flex-row items-center gap-y-6 gap-x-6">
+                    <ul class="flex flex-col lg:flex-row lg:items-center gap-y-6 gap-x-6">
                         <li><a class="text-gray-300 hover:text-white active_link" href="/">Home</a></li>
-                        <li><a class="text-gray-300 hover:text-white" href="enterprise-solutions.html">Enterprise Solutions</a></li>
-                        <li><a class="text-gray-300 hover:text-white" href="airq.html">AIR Q</a></li>
+                        <li class="dropdown w-full lg:w-auto relative group">
+                            <button class="dropdown-toggle flex justify-between items-center w-full text-gray-300 hover:text-white focus:outline-none lg:w-auto lg:gap-1">
+                                <span>Solutions</span>
+                                <svg class="dropdown-arrow w-4 h-4 text-gray-400 transition-transform duration-200 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+
+                            <ul class="dropdown-menu lg:absolute lg:left-0 lg:top-full lg:mt-2 w-full lg:w-48 bg-gray-800 rounded-md shadow-lg overflow-hidden transition-all duration-300">
+                                <li><a href="http://mypocketboss.com" target="_blank" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Pocket Boss</a></li>
+                                <li><a href="https://airassist.ai/" target="_blank" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Air Assist</a></li>
+                                <li><a href="https://www.getconnected.cloud/" target="_blank" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Get Connected</a></li>
+                                <li><a href="project-boss.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Project Boss</a></li>
+                                <li><a href="profit-boss.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Profit Boss</a></li>
+                                <li><a href="affiliate-boss.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Affiliate Boss</a></li>
+                                <li><a href="full-erp-automation.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Full ERP Automation</a></li>
+                            </ul>
+                        </li>
                         <li><a class="text-gray-300 hover:text-white" href="https://airassist.ai/" target="_blank">Air Assist</a></li>
-                        <li><a class="text-gray-300 hover:text-white" href="http://mypocketboss.com" target="_blank">Pocket Boss</a></li>
-                        <li><a class="text-gray-300 hover:text-white" href="robotics.html">Robotics</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="robotshop.html">RobotShop</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="airq.html">AIR Q</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="metaverse.html">Metaverse</a></li>
                         <li><a class="text-gray-300 hover:text-white" href="blog.html">Blog</a></li>
                         <li class="lg:hidden"><a class="btn-gradient text-white font-medium py-2 px-4 rounded-md transition duration-300" href="sms:+14809130155">Text to 480-913-0155</a></li>
                     </ul>
@@ -339,8 +356,10 @@
             <!-- ALLI Robotic Solutions – Pricing & Services -->
             <section class="py-20">
                 <div class="max-w-7xl mx-auto px-4">
-                    <h2 class="text-4xl font-bold text-center mb-7">A.L.L.I.<span class="gradient-text"> ROBOTIC SOLUTIONS</span></h2>
-
+                    <h2 class="text-4xl font-bold text-center mb-4">Introducing <span class="gradient-text"> A.L.L.I</span></h2>
+                    <p class="text-xl text-gray-300 text-center mb-12">
+                        Ai automation and management integrated with robotics
+                    </p>
                     <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
                         <!-- ALLI Cloud Robot -->
                         <div class="bg-white p-8 border border-blue-100">

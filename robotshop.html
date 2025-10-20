@@ -32,13 +32,30 @@
                     </button>
                 </div>
                 <nav>
-                    <ul class="flex flex-col lg:flex-row items-center gap-y-6 gap-x-6">
+                    <ul class="flex flex-col lg:flex-row lg:items-center gap-y-6 gap-x-6">
                         <li><a class="text-gray-300 hover:text-white active_link" href="/">Home</a></li>
-                        <li><a class="text-gray-300 hover:text-white" href="enterprise-solutions.html">Enterprise Solutions</a></li>
-                        <li><a class="text-gray-300 hover:text-white" href="airq.html">AIR Q</a></li>
+                        <li class="dropdown w-full lg:w-auto relative group">
+                            <button class="dropdown-toggle flex justify-between items-center w-full text-gray-300 hover:text-white focus:outline-none lg:w-auto lg:gap-1">
+                                <span>Solutions</span>
+                                <svg class="dropdown-arrow w-4 h-4 text-gray-400 transition-transform duration-200 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+
+                            <ul class="dropdown-menu lg:absolute lg:left-0 lg:top-full lg:mt-2 w-full lg:w-48 bg-gray-800 rounded-md shadow-lg overflow-hidden transition-all duration-300">
+                                <li><a href="http://mypocketboss.com" target="_blank" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Pocket Boss</a></li>
+                                <li><a href="https://airassist.ai/" target="_blank" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Air Assist</a></li>
+                                <li><a href="https://www.getconnected.cloud/" target="_blank" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Get Connected</a></li>
+                                <li><a href="project-boss.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Project Boss</a></li>
+                                <li><a href="profit-boss.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Profit Boss</a></li>
+                                <li><a href="affiliate-boss.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Affiliate Boss</a></li>
+                                <li><a href="full-erp-automation.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Full ERP Automation</a></li>
+                            </ul>
+                        </li>
                         <li><a class="text-gray-300 hover:text-white" href="https://airassist.ai/" target="_blank">Air Assist</a></li>
-                        <li><a class="text-gray-300 hover:text-white" href="http://mypocketboss.com" target="_blank">Pocket Boss</a></li>
-                        <li><a class="text-gray-300 hover:text-white" href="robotics.html">Robotics</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="robotshop.html">RobotShop</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="airq.html">AIR Q</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="metaverse.html">Metaverse</a></li>
                         <li><a class="text-gray-300 hover:text-white" href="blog.html">Blog</a></li>
                         <li class="lg:hidden"><a class="btn-gradient text-white font-medium py-2 px-4 rounded-md transition duration-300" href="sms:+14809130155">Text to 480-913-0155</a></li>
                     </ul>
@@ -220,51 +237,69 @@
 
                 <div class="grid md:grid-cols-3 grid-cols-1 border border-gray-700">
                     <div class="bg-gray-700 p-8">
-                        <div class="flex justify-center mb-4">
+                        <div class="flex justify-center mb-5">
                             <img src="assets/img/Robotics/pocketboss.png" alt="pocket boss" class="h-12 w-full object-contain">
                         </div>
-                        <p class="text-sm text-center leading-normal mb-6">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur explicabo unde sapiente deserunt odit facilis in id corporis ratione accusamus, doloremque dicta ab ducimus error a. Voluptates, alias quos?
+                        <h3 class="text-xl font-bold mb-3">
+                            Your AI-Powered Command Center for Customer Relationships
+                        </h3>
+                        <p class="text-sm leading-normal">
+                            Pocket Boss is your company's intelligent communication hub that transforms how you connect with leads and customers. By seamlessly integrating all your AI components into one intuitive platform, it automates lead nurturing, streamlines conversations, and ensures no opportunity slips through the cracks. With literally zero learning curve, your team can start seeing results from day one. It's not just efficient—it's the smartest micro-SaaS investment you'll ever make for growing your business.
                         </p>
                     </div>
                     <div class="bg-gray-900 p-8">
-                        <div class="flex justify-center mb-4">
+                        <div class="flex justify-center mb-5">
                             <img src="assets/img/Robotics/airassist.png" alt="air assist" class="h-12 w-full object-contain">
                         </div>
-                        <p class="text-sm text-center leading-normal mb-6">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur explicabo unde sapiente deserunt odit facilis in id corporis ratione accusamus, doloremque dicta ab ducimus error a. Voluptates, alias quos?
+                        <h3 class="text-xl font-bold mb-3">
+                            Run Your Entire Business by Voice—From Anywhere
+                        </h3>
+                        <p class="text-sm leading-normal">
+                            Air Assist revolutionizes how you manage your company with the world's first voice-command Bluetooth connection to your AI cloud. Whether you're in a meeting, on the road, or away from your desk, simply speak to access data, assign tasks, and control your entire operation. Full task management and instant data retrieval—all hands-free. With Air Assist, your business truly becomes pocket-sized, giving you unprecedented freedom without sacrificing control.
                         </p>
                     </div>
                     <div class="bg-gray-700 p-8">
-                        <div class="flex justify-center mb-4">
+                        <div class="flex justify-center mb-5">
                             <img src="assets/img/Robotics/getconnected.png" alt="get connected" class="h-12 w-full object-contain">
                         </div>
-                        <p class="text-sm text-center leading-normal mb-6">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur explicabo unde sapiente deserunt odit facilis in id corporis ratione accusamus, doloremque dicta ab ducimus error a. Voluptates, alias quos?
+                        <h3 class="text-xl font-bold mb-3">
+                            AI-Powered Lead Generation That Never Stops Working
+                        </h3>
+                        <p class="text-sm leading-normal">
+                            Get Connected is the breakthrough lead generation tool that combines AI intelligence with your micro-SaaS ecosystem to automatically find, engage, and convert prospects. Leads flow directly into optimized workflows designed to maximize conversions, while real-time insights help you expand your network strategically. No more cold prospecting or manual follow-ups—Get Connected works 24/7 to fill your pipeline with qualified opportunities while you focus on closing deals.
                         </p>
                     </div>
                     <div class="bg-gray-900 p-8">
-                        <div class="flex justify-center mb-4">
+                        <div class="flex justify-center mb-5">
                             <img src="assets/img/Robotics/profitboss.png" alt="profit boss" class="h-20 w-full object-contain">
                         </div>
-                        <p class="text-sm text-center leading-normal mb-6">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur explicabo unde sapiente deserunt odit facilis in id corporis ratione accusamus, doloremque dicta ab ducimus error a. Voluptates, alias quos?
+                        <h3 class="text-xl font-bold mb-3">
+                            AI-Driven Financial Intelligence That Thinks Like Your CFO
+                        </h3>
+                        <p class="text-sm leading-normal">
+                            Profit Boss is the world's first AI-managed accounting system that centralizes every financial data point across your business. It automatically syncs your reports, tracks your cash flow, and delivers real-time insights that empower smarter decisions. Need confidential analysis or strategic suggestions? Simply ask—Profit Boss provides private, personalized financial guidance tailored to your company's unique needs. Stop drowning in spreadsheets and start making data-driven decisions with confidence.
                         </p>
                     </div>
                     <div class="bg-gray-700 p-8">
-                        <div class="flex justify-center mb-4">
+                        <div class="flex justify-center mb-5">
                             <img src="assets/img/Robotics/projectboss.png" alt="project boss" class="h-20 w-full object-contain">
                         </div>
-                        <p class="text-sm text-center leading-normal mb-6">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur explicabo unde sapiente deserunt odit facilis in id corporis ratione accusamus, doloremque dicta ab ducimus error a. Voluptates, alias quos?
+                        <h3 class="text-xl font-bold mb-3">
+                            AI Project Management That Runs Your Deals on Autopilot
+                        </h3>
+                        <p class="text-sm leading-normal">
+                            Project Boss is the most intelligent AI project management platform on the market, designed to handle every transaction from start to finish without you lifting a finger. Your AI cloud robot manages all your listings, buyer deals, and closings as organized projects—tracking every task, deadline, and document automatically. While Project Boss runs your deals around the clock, it syncs seamlessly with Pocket Boss to update all your contacts in real-time, keeping everyone in the loop without you sending a single message. Whether it's you, your team, or your AI managing the workflow, nothing ever gets missed and every deal moves smoothly to closing.
                         </p>
                     </div>
                     <div class="bg-gray-900 p-8">
-                        <div class="flex justify-center mb-4">
+                        <div class="flex justify-center mb-5">
                             <img src="assets/img/Robotics/affiliateboss.png" alt="affiliate boss" class="h-20 w-full object-contain">
                         </div>
-                        <p class="text-sm text-center leading-normal mb-6">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur explicabo unde sapiente deserunt odit facilis in id corporis ratione accusamus, doloremque dicta ab ducimus error a. Voluptates, alias quos?
+                        <h3 class="text-xl font-bold mb-3">
+                            The Only AI-Integrated Affiliate System That Grows Itself
+                        </h3>
+                        <p class="text-sm leading-normal">
+                            Affiliate Boss is the game-changing affiliate platform that integrates seamlessly with your CRM and e-commerce backend to manage and expand your affiliate network automatically. Using AI to identify, recruit, and nurture affiliate partnerships in real-time, it eliminates the manual grind of affiliate management. Your affiliate database grows while you sleep, your commissions are tracked fl
                         </p>
                     </div>
                 </div>
