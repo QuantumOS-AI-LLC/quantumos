@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Animation Loop</title>
+
+  <!-- ✅ Keep only these CSS links -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/css/glightbox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes blink {
+
+      0%,
+      49% {
+        opacity: 1;
+      }
+
+      50%,
+      100% {
+        opacity: 0;
+      }
+    }
+
+    body {
+      background: #f3f4f6;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .chat-wrapper {
+      max-width: 450px;
+      margin: 0 auto;
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      background: rgba(255, 255, 255, .6);
+      border-radius: 0 0 30px 30px;
+      border: 1px solid #e5e5e5;
+      border-top: none;
+    }
+
+    .message-bubble {
+      opacity: 0;
+    }
+
+    .message-bubble.show {
+      animation: slideUp 0.4s ease-out forwards;
+    }
+
+    .message-exit {
+      animation: fadeOut 0.3s ease-out forwards;
+    }
+
+    .loading-spinner {
+      animation: spin 1s linear infinite;
+    }
+
+    .loading-text {
+      animation: pulse 1.5s infinite;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 2px;
+      height: 18px;
+      background: #9ca3af;
+      animation: blink 1s infinite;
+      vertical-align: text-bottom;
+      margin-left: 1px;
+    }
+
+    .chat-container::-webkit-scrollbar {
+      width: 0;
+      display: none;
+    }
+
+    .chat-container {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="chat-wrapper">
+    <div id="chatContainer" class="chat-container flex-1 overflow-y-auto px-4 py-5 space-y-3"></div>
+    <div class="p-4">
+      <div class="flex items-center space-x-2 border border-gray-200 rounded-full bg-white p-1.5">
+        <div class="flex-1 relative">
+          <div class="w-full px-4 py-2 rounded-full text-sm flex items-center">
+            <span id="typingText" class="text-gray-700"></span>
+            <span id="cursor" class="cursor hidden"></span>
+            <span id="placeholder" class="text-gray-400">Enter your message</span>
+          </div>
+        </div>
+        <button
+          class="w-11 h-11 text-gray-400 hover:text-gray-600 bg-gray-50 rounded-full flex items-center justify-center transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: rotate(-45deg);">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
+          </svg>
+        </button>
+        <button
+          class="w-11 h-11 text-gray-400 hover:text-gray-600 bg-gray-50 rounded-full flex items-center justify-center transition-colors">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+              d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const chatContainer = document.getElementById('chatContainer');
+    const typingText = document.getElementById('typingText');
+    const cursor = document.getElementById('cursor');
+    const placeholder = document.getElementById('placeholder');
+    let messageElements = [];
+
+    const conversation = [
+      { type: 'user', text: 'Hi, I need to reset my Wi-Fi password.', delay: 1000, typing: true },
+      { type: 'loading', text: 'Checking account details...', delay: 2000 },
+      { type: 'bot', text: 'Sure, I see your current network is "Johnson Home WiFi." Do you want me to generate a new password or would you like to set your own?', delay: 1500 },
+      { type: 'user', text: 'Please generate a new one.', delay: 2000, typing: true },
+      { type: 'loading', text: 'Generating...', delay: 2000 },
+      { type: 'bot', text: 'Done. Your new password is "BrightSky82." It will be active immediately across all devices.', delay: 1500 },
+    ];
+
+    function clearChat() {
+      messageElements.forEach(el => {
+        if (el && el.parentNode) {
+          el.classList.add('message-exit');
+          setTimeout(() => el.remove(), 300);
+        }
+      });
+      messageElements = [];
+      typingText.textContent = '';
+      cursor.classList.add('hidden');
+      placeholder.classList.remove('hidden');
+    }
+
+    function typeMessage(text, callback) {
+      placeholder.classList.add('hidden');
+      cursor.classList.remove('hidden');
+      typingText.textContent = '';
+      let i = 0;
+      const interval = setInterval(() => {
+        typingText.textContent += text[i];
+        i++;
+        if (i === text.length) {
+          clearInterval(interval);
+          setTimeout(() => {
+            cursor.classList.add('hidden');
+            typingText.textContent = '';
+            placeholder.classList.remove('hidden');
+            callback();
+          }, 400);
+        }
+      }, 40);
+    }
+
+    function addMessage(text, type) {
+      const messageDiv = document.createElement('div');
+      messageDiv.className = `message-bubble flex ${type === 'user' ? 'justify-end' : 'justify-start'}`;
+      if (type === 'user') {
+        messageDiv.innerHTML = `
+          <div class="max-w-xs">
+            <div class="bg-gray-100 text-gray-900 rounded-2xl px-4 py-2.5">
+              <p class="text-sm">${text}</p>
+            </div>
+          </div>`;
+      } else {
+        messageDiv.innerHTML = `
+          <div class="flex items-start space-x-2 max-w-xs">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"></path>
+              </svg>
+            </div>
+            <div class="bg-black rounded-2xl px-4 py-2.5 shadow-sm transition-all duration-300">
+              <p class="text-sm text-white">${text}</p>
+            </div>
+          </div>`;
+      }
+      chatContainer.appendChild(messageDiv);
+      messageElements.push(messageDiv);
+      setTimeout(() => {
+        messageDiv.classList.add('show');
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+      }, 50);
+      return messageDiv;
+    }
+
+    function showLoadingState(text) {
+      const loadingDiv = document.createElement('div');
+      loadingDiv.className = 'message-bubble flex justify-start';
+      loadingDiv.innerHTML = `
+        <div class="flex items-start space-x-2">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"></path>
+            </svg>
+          </div>
+          <div class="bg-black text-white rounded-2xl px-4 py-2.5 flex items-center space-x-2 shadow-sm transition-all duration-300">
+            <div class="loading-spinner">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3"></circle>
+                <path class="opacity-75" fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+            </div>
+            <span class="text-sm loading-text">${text}</span>
+          </div>
+        </div>`;
+      chatContainer.appendChild(loadingDiv);
+      messageElements.push(loadingDiv);
+      setTimeout(() => {
+        loadingDiv.classList.add('show');
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+      }, 50);
+      return loadingDiv;
+    }
+
+    async function runAnimation() {
+      let lastBotBubble = null;
+      for (const item of conversation) {
+        await new Promise(r => setTimeout(r, item.delay));
+        if (item.type === 'user' && item.typing) {
+          await new Promise(r => {
+            typeMessage(item.text, () => {
+              addMessage(item.text, 'user');
+              r();
+            });
+          });
+        } else if (item.type === 'loading') {
+          lastBotBubble = showLoadingState(item.text);
+        } else if (item.type === 'bot') {
+          if (lastBotBubble) {
+            const spinner = lastBotBubble.querySelector('.loading-spinner');
+            const textEl = lastBotBubble.querySelector('span.loading-text');
+            if (spinner) spinner.remove();
+            if (textEl) {
+              textEl.style.opacity = 0;
+              setTimeout(() => {
+                textEl.textContent = item.text;
+                textEl.classList.remove('loading-text');
+                textEl.classList.add('text-sm');
+                textEl.style.transition = 'opacity 0.4s ease';
+                textEl.style.opacity = 1;
+              }, 200);
+            }
+            lastBotBubble = null;
+          } else addMessage(item.text, 'bot');
+        }
+      }
+      await new Promise(r => setTimeout(r, 3000));
+      clearChat();
+      await new Promise(r => setTimeout(r, 1000));
+      runAnimation();
+    }
+
+    setTimeout(() => runAnimation(), 500);
+  </script>
+</body>
+
+</html>
