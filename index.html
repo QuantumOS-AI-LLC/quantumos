@@ -266,7 +266,7 @@
                         <li><a class="text-gray-300 hover:text-white" href="https://airassist.ai/" target="_blank">Air Assist</a></li>
                         <li><a class="text-gray-300 hover:text-white" href="robotshop.html">RobotShop</a></li>
                         <li><a class="text-gray-300 hover:text-white" href="airq.html">AIR Q</a></li>
-                        <li><a class="text-gray-300 hover:text-white" href="metaverse.html">Metaverse</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="metaverse-office-guide.html">Metaverse</a></li>
                         <li><a class="text-gray-300 hover:text-white" href="blog.html">Blog</a></li>
                         <li class="lg:hidden"><a class="btn-gradient text-white font-medium py-2 px-4 rounded-md transition duration-300" href="sms:+14809130155">Text to 480-913-0155</a></li>
                     </ul>
@@ -393,7 +393,7 @@
             </section>
 
             <!-- ALLI Robotics Feature Comparison Table -->
-            <section class="py-20 bg-gray-900 text-gray-100 mb-16">
+            <section class="py-20 bg-gray-900 text-gray-100 mb-8">
                 <div class="container mx-auto px-6 text-center">
                     <h2 class="text-4xl font-bold text-white mb-4">Out of the Box Your Alli Robot Can do the following:</h2>
                     <p class="text-gray-400 mb-12 max-w-2xl mx-auto">
@@ -532,6 +532,79 @@
                     </div>
                 </div>
             </section>
+
+            <!-- ALLI Calculator -->
+            <section class="py-20 mb-8">
+                <div class="container mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h1 class="text-3xl lg:text-5xl font-bold text-white mb-4">QuantumOS.ai Cost Calculator</h1>
+                        <p class="text-xl text-blue-200">See how much you can save with Alli AI</p>
+                    </div>
+                    <div class="max-w-7xl mx-auto">
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+                            <div class="lg:col-span-2 bg-gray-700 rounded-2xl shadow-2xl p-4 lg:p-8">
+                                <h2 class="text-2xl lg:text-3xl font-bold text-white mb-6 flex items-center"><svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>Employee
+                                    Costs</h2>
+                                <div id="roles-container" class="space-y-6"></div>
+                            </div>
+                            <div class="lg:col-span-1">
+                                <div class="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl shadow-2xl p-4 lg:p-8 text-white sticky top-12">
+                                    <h2 class="text-2xl font-bold mb-6 flex items-center"><svg class="w-7 h-7 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>Cost
+                                        Comparison</h2>
+                                    <div class="space-y-6">
+                                        <div class="bg-white bg-opacity-20 rounded-xl p-4">
+                                            <p class="text-sm text-blue-100 mb-1">Traditional Employees</p>
+                                            <p class="text-3xl font-bold" id="traditional-cost">$0.00</p>
+                                            <p class="text-xs text-blue-200 mt-1">per month</p>
+                                        </div>
+                                        <div class="bg-white bg-opacity-20 rounded-xl p-4">
+                                            <p class="text-sm text-blue-100 mb-1">Alli AI Solution</p>
+                                            <p class="text-3xl font-bold text-green-300" id="alli-cost">$1,500.00</p>
+                                            <p class="text-xs text-blue-200 mt-1">per month</p>
+                                        </div>
+                                        <div class="border-t border-white border-opacity-30 pt-4">
+                                            <div class="bg-green-500 bg-opacity-30 rounded-xl p-4 border-2 border-green-300">
+                                                <p class="text-sm text-green-100 mb-1">💰 Your Savings</p>
+                                                <p class="text-4xl font-bold text-green-200" id="savings">$0.00</p>
+                                                <p class="text-lg font-semibold text-green-300 mt-2" id="savings-percent">0% saved</p>
+                                            </div>
+                                        </div>
+                                        <div class="bg-white bg-opacity-10 rounded-xl p-4 mt-4">
+                                            <p class="text-xs text-blue-200 mb-2">Alli AI Hours/Month</p>
+                                            <p class="text-2xl font-bold" id="alli-hours">0</p>
+                                            <p class="text-xs text-blue-200 mt-2">Base: $1,500 + $1.35/hour</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-700 rounded-2xl shadow-2xl p-4 lg:p-8 mt-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-indigo-600 rounded-full p-3 mr-4"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white">Alli AI Pricing</h3>
+                                    <p class="text-gray-300">Transparent, predictable costs</p>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                                <div class="bg-gray-800 rounded-xl p-4 border-2 border-indigo-700">
+                                    <p class="text-sm text-indigo-700 font-semibold mb-1">Base Monthly Fee</p>
+                                    <p class="text-3xl font-bold text-indigo-500">$1,500</p>
+                                </div>
+                                <div class="bg-gray-800 rounded-xl p-4 border-2 border-green-700">
+                                    <p class="text-sm text-green-700 font-semibold mb-1">Per Hour Cost</p>
+                                    <p class="text-3xl font-bold text-green-500">$1.35</p>
+                                </div>
+                                <div class="bg-gray-800 rounded-xl p-4 border-2 border-purple-700">
+                                    <p class="text-sm text-purple-700 font-semibold mb-1">Computing &amp; AI</p>
+                                    <p class="text-2xl font-bold text-purple-500">Included</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             
 
             <!-- Enhanced Workflow Automation Section -->
             <section id="workflow" class="mb-24 relative">
@@ -1372,6 +1445,7 @@
     <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/alli-calculator.js"></script>
 </body>
 
 </html>
