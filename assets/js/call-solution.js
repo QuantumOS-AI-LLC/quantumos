@@ -88,7 +88,7 @@ $(document).ready(function () {
     const $loadingDiv = $("<div>").addClass("message-bubble flex justify-start");
     $loadingDiv.html(`
       <div class="flex items-start space-x-2">
-        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center flex-shrink-0">
+        <div class="w-8 h-8 rounded-full bg-gradient-to-r from-blue-600 to-indigo-500 flex items-center justify-center flex-shrink-0">
           <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"></path>

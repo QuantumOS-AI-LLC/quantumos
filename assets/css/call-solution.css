@@ -54,9 +54,9 @@
     height: 320px;
     display: flex;
     flex-direction: column;
-    background: rgba(255, 255, 255, .6);
+    background: rgba(255, 255, 255, 0.33);
     border-radius: 0 0 30px 30px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #e5e5e58a;
     border-top: none;
 }
 

@@ -84,513 +84,150 @@
             <div class="blob-animation"></div>
             <div class="blur-bg" style="top: -10%; left: -10%;"></div>
             <div class="blur-bg" style="top: 20%; right: -20%;"></div>
-            <div class="container mx-auto px-4 pb-20">
-                 <div class="chat-wrapper">
+            <div class="container mx-auto px-4 pb-10">
+                <div class="chat-wrapper">
                     <div id="chatContainer" class="chat-container flex-1 overflow-y-auto px-4 py-5 space-y-3"></div>
                     <div class="p-4">
-                    <div class="flex items-center space-x-2 border border-gray-200 rounded-full bg-white p-1.5">
-                        <div class="flex-1 relative">
-                        <div class="w-full px-4 py-2 rounded-full text-sm flex items-center">
-                            <span id="typingText" class="text-gray-700"></span>
-                            <span id="cursor" class="cursor hidden"></span>
-                            <span id="placeholder" class="text-gray-400">Enter your message</span>
-                        </div>
-                        </div>
-                        <button
-                        class="w-11 h-11 text-gray-400 hover:text-gray-600 bg-gray-50 rounded-full flex items-center justify-center transition-colors">
+                        <div class="flex items-center space-x-2 border border-gray-400 rounded-full bg-gray-600 p-1.5">
+                            <div class="flex-1 relative">
+                                <div class="w-full px-4 py-2 rounded-full text-sm flex items-center">
+                                    <span id="typingText" class="text-white"></span>
+                                    <span id="cursor" class="cursor hidden"></span>
+                                    <span id="placeholder" class="text-gray-400">Enter your message</span>
+                                </div>
+                            </div>
+                            <button class="w-11 h-11 text-gray-400 hover:text-gray-600 bg-gray-50 rounded-full flex items-center justify-center transition-colors">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: rotate(-45deg);">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                             d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
                         </svg>
                         </button>
-                        <button
-                        class="w-11 h-11 text-gray-400 hover:text-gray-600 bg-gray-50 rounded-full flex items-center justify-center transition-colors">
+                            <button class="w-11 h-11 text-gray-400 hover:text-gray-600 bg-gray-50 rounded-full flex items-center justify-center transition-colors">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
                             d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z"
                             clip-rule="evenodd" />
                         </svg>
                         </button>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About the team Section -->
-        <section class="py-20 bg-gray-50 bg-opacity-10">
-            <div class="container mx-auto px-4" data-aos="fade-in">
-                <div class="max-w-3xl mx-auto mb-10">
-                    <h2 class="text-3xl font-bold mb-4 section-heading">About The Team</h2>
-                    <p class="text-lg text-gray-200">Enterprise AI Automation Team at QuantumOS.ai</p>
+        <!-- Intro Section -->
+        <section class="py-24 text-center text-white bg-transparent">
+            <div class="max-w-3xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-4">
+                    Keep customers <span class="text-blue-400">connected</span>
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-8">
+                    Launch natural, human-sounding agents in 32 languages with leading accuracy and ultra-low latency in voice or chat. Improve operational resilience, reduce cost and increase LTV.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#" class="rounded-full bg-gradient-to-r from-blue-600 to-indigo-500 text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">Talk to Sales</a>
+                    <a href="#" class="rounded-full border border-gray-500 text-gray-200 px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">Create an AI Agent</a>
                 </div>
+            </div>
+        </section>
 
-                <div class="max-w-4xl mx-auto">
-                    <p class="text-gray-200 mb-4">
-                        At QuantumOS.ai, our enterprise automation team specializes in transforming operations for high-growth companies and Fortune 500 organizations through strategic AI integration and business process automation.
+        <!-- Trusted Logos -->
+        <section class="py-10 border-t border-b border-gray-800">
+            <div class="max-w-6xl mx-auto px-4 flex flex-wrap justify-center gap-8 opacity-60">
+                <img src="assets/img/call-solution/twilio.svg" alt="twilio" class="h-8 brightness-125">
+                <img src="assets/img/call-solution/meesho.svg" alt="meesho" class="h-8 brightness-125">
+                <img src="assets/img/call-solution/telus-digital.webp" alt="telus digital" class="h-8 brightness-125">
+                <img src="assets/img/call-solution/cisco.svg" alt="cisco" class="h-8 brightness-125">
+                <img src="assets/img/call-solution/deutsche-telekom.webp" alt="deutsche telekom" class="h-8 brightness-125">
+                <img src="assets/img/call-solution/elise-ai.webp" alt="elise ai" class="h-8 brightness-125">
+            </div>
+        </section>
+
+        <!-- Introducing QuantumOS Agents -->
+        <section class="py-24 relative">
+            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-sm uppercase tracking-wide text-blue-400 font-semibold mb-2">Introducing</h3>
+                    <h2 class="text-3xl lg:text-7xl font-semibold text-white mb-4">ElevenLabs Agents for Telecoms</h2>
+                    <a href="#" class="inline-flex items-center gap-2 text-blue-400 font-semibold hover:underline">
+                        <i class="fa-solid fa-play-circle"></i> Watch Demo
+                    </a>
+                </div>
+                <div class="flex justify-center">
+                    <img src="assets/img/ai-agent.png" alt="Quantum Agent" class="w-80 rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Automation -->
+        <section class="py-24 border-t border-gray-800">
+            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold text-white mb-4">AI Agents that scale with your business</h2>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        From routine inquiries to critical support cases, QuantumOS Agents handle it all with real-time accuracy. Free up human teams, reduce costs, and enhance 24/7 service performance.
                     </p>
-                    <ul class="text-gray-200 mb-4">
-                        <li>
-                            <i class="fa-solid fa-bolt text-yellow-500"></i> Saved $4.2M annually for a global supply chain leader through AI-driven workflow automation
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-bolt text-yellow-500"></i> Reduced operational costs by 68% while improving accuracy to 99.7% with fully automated systems
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-bolt text-yellow-500"></i> Extended equipment lifespan by 34% and reduced downtime by 78% using predictive maintenance systems
-                        </li>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><i class="fa-solid fa-check text-blue-400 mr-2"></i> Omnichannel automation</li>
+                        <li><i class="fa-solid fa-check text-blue-400 mr-2"></i> Seamless CRM integration</li>
+                        <li><i class="fa-solid fa-check text-blue-400 mr-2"></i> Scalable across teams</li>
                     </ul>
+                </div>
+                <div class="order-1 md:order-2 flex justify-center">
+                    <img src="assets/img/support-ai.png" alt="AI Support" class="w-80 rounded-xl shadow-xl">
+                </div>
+            </div>
+        </section>
 
-                    <p class="text-gray-200 mb-4">
-                        We start every engagement with a deep business process analysis to identify areas of waste, inefficiency, and manual bottlenecks. From there, our team designs and implements fully customized automation systems using platforms like Make.com, Zapier, and
-                        proprietary AI workflows tailored to each client’s needs.
+        <!-- Shopping Concierge -->
+        <section class="py-24 border-t border-gray-800">
+            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-4">Deliver context-aware shopping concierges</h2>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        QuantumOS Agents guide your customers through personalized shopping experiences — from recommendations to purchase follow-up — helping you boost retention and lifetime value.
                     </p>
-                    <p class="text-gray-200 mb-4">
-                        Our solutions automate critical functions including:
-                    </p>
+                    <a href="#" class="text-blue-400 font-semibold hover:underline">Learn More</a>
+                </div>
+                <div class="flex justify-center">
+                    <img src="assets/img/ecommerce-ai.png" alt="Ecommerce AI" class="w-80 rounded-xl shadow-xl">
+                </div>
+            </div>
+        </section>
 
-                    <ul class="text-gray-200 list-disc pl-5 mb-4">
-                        <li>
-                            Customer acquisition and support
-                        </li>
-                        <li>
-                            Inventory and supply chain management
-                        </li>
-                        <li>
-                            Quality control and compliance
-                        </li>
-                        <li>
-                            Financial processes and analytics
-                        </li>
-                        <li>
-                            Internal communication and task orchestration
-                        </li>
+        <!-- Multi-Agent Workflows -->
+        <section class="py-24 border-t border-gray-800">
+            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold text-white mb-4">Create multi-agent workflows</h2>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Build collaborative AI workflows that coordinate across departments — ensuring compliance, analytics, and measurable performance.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><i class="fa-solid fa-circle-check text-blue-400 mr-2"></i> Guardrail-based task execution</li>
+                        <li><i class="fa-solid fa-circle-check text-blue-400 mr-2"></i> Real-time tracking and reporting</li>
+                        <li><i class="fa-solid fa-circle-check text-blue-400 mr-2"></i> Deep API and CRM integrations</li>
                     </ul>
-
-                    <p class="text-gray-200 mb-4">
-                        Our combined expertise includes:
-                    </p>
-
-                    <ul class="text-gray-200 mb-4">
-                        <li>
-                            <i class="fa-solid fa-square-check text-green-500 mr-1"></i> End-to-end workflow automation
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-square-check text-green-500 mr-1"></i> Business process mapping and optimization
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-square-check text-green-500 mr-1"></i> Predictive analytics and forecasting
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-square-check text-green-500 mr-1"></i> AI integration across departments
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-square-check text-green-500 mr-1"></i> Compliance and data security frameworks
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-square-check text-green-500 mr-1"></i> Custom API development and platform orchestration
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-square-check text-green-500 mr-1"></i> Change management and team enablement
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-square-check text-green-500 mr-1"></i> Scalable infrastructure planning
-                        </li>
-                    </ul>
-
-                    <p class="text-gray-200 mb-4">QuantumOS.ai delivers automation systems that typically pay for themselves in under 90 days and continue generating value over time. Whether your goal is full digital transformation, AI-enabled forecasting, or streamlining operations
-                        at scale—our team builds automation that drives measurable, lasting results.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="py-20 relative">
-            <div class="blur-bg" style="top: 30%; left: 10%;"></div>
-            <div class="blur-bg" style="top: 0%; right: 10%;"></div>
-            <div class="container mx-auto px-4 relative">
-                <div class="max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl font-bold mb-4 section-heading">Enterprise AI Services</h2>
-                    <p class="text-lg text-gray-200">Our comprehensive suite of AI-powered enterprise solutions are designed to transform your organization's operations, efficiency, and productivity.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-in">
-                    <!-- Service 1 -->
-                    <div class="service-card glass-card">
-                        <div class="p-8">
-                            <div class="service-icon mb-4">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-3">Chatbot AI Automations</h3>
-                            <p class="text-gray-200 mb-4">We design and implement AI chatbots tailored to your business needs. These bots handle customer service, lead generation, and various tasks, freeing your team to focus on strategic initiatives.</p>
-                            <ul class="text-gray-200 space-y-2">
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> 24/7 customer support automation</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Lead qualification and nurturing</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Seamless integration with existing systems</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Service 2 -->
-                    <div class="service-card glass-card">
-                        <div class="p-8">
-                            <div class="service-icon mb-4">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-3">ERP/CRM Software Automation</h3>
-                            <p class="text-gray-200 mb-4">Our AI-powered CRM automation systems build custom workflows that automate your customer relationship management processes with no technical expertise required.</p>
-                            <ul class="text-gray-200 space-y-2">
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Complete process automation</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Out-of-the-box functionality</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Ongoing optimization without human input</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Service 3 -->
-                    <div class="service-card glass-card">
-                        <div class="p-8">
-                            <div class="service-icon mb-4">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-3">Database Management</h3>
-                            <p class="text-gray-200 mb-4">We connect all your business data sources into one centralized system and implement AI analysis tools that deliver actionable insights without hiring data specialists.</p>
-                            <ul class="text-gray-200 space-y-2">
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Multi-location data centralization</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> AI-driven business intelligence</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Automated reporting and analysis</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Service 4 -->
-                    <div class="service-card glass-card">
-                        <div class="p-8">
-                            <div class="service-icon mb-4">
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-3">QA Testing</h3>
-                            <p class="text-gray-200 mb-4">We create automated systems that test, validate, and optimize your business workflows, increasing reliability and reducing errors with continuous monitoring.</p>
-                            <ul class="text-gray-200 space-y-2">
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Automated business process optimization</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Continuous monitoring and improvement</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Error reduction and reliability enhancement</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Service 5 -->
-                    <div class="service-card glass-card">
-                        <div class="p-8">
-                            <div class="service-icon mb-4">
-                                <i class="fas fa-bullhorn"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-3">Lead Generation & Telemarketing</h3>
-                            <p class="text-gray-200 mb-4">Our AI systems qualify leads, nurture relationships, and follow up with customers automatically, increasing conversion rates without adding staff.</p>
-                            <ul class="text-gray-200 space-y-2">
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> AI-powered lead qualification</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Automated relationship nurturing</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> 24/7 operation with continuous improvement</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Service 6 -->
-                    <div class="service-card glass-card">
-                        <div class="p-8">
-                            <div class="service-icon mb-4">
-                                <i class="fas fa-network-wired"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-3">Network & System Administration</h3>
-                            <p class="text-gray-200 mb-4">We implement and manage complete digital workforce solutions that integrate with your existing systems, providing enterprise-level automation.</p>
-                            <ul class="text-gray-200 space-y-2">
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Enterprise AI integration</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Seamless system management</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Zero technical expertise required</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Service 7 -->
-                    <div class="service-card glass-card">
-                        <div class="p-8">
-                            <div class="service-icon mb-4">
-                                <i class="fas fa-pen-fancy"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-3">Content Writing</h3>
-                            <p class="text-gray-200 mb-4">Our AI systems create, optimize, and distribute marketing content across all channels, maintaining consistent brand messaging with minimal oversight.</p>
-                            <ul class="text-gray-200 space-y-2">
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> AI-powered content creation</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Multi-channel distribution</li>
-                                <li><i class="fas fa-check text-green-500 mr-2"></i> Brand-consistent messaging at scale</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- How It Works Section -->
-        <section class="py-20 bg-gray-50 bg-opacity-10">
-            <div class="container mx-auto px-4">
-                <div class="max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl font-bold mb-4 section-heading">Our Turnkey Implementation Process</h2>
-                    <p class="text-lg text-gray-200">We handle the entire implementation process from start to finish, with no technical expertise required from your team.</p>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-                    <div class="order-2 lg:order-1">
-                        <div class="process-step" data-aos="fade-left" data-aos-delay="100">
-                            <div class="step-number">1</div>
-                            <h3 class="text-xl font-semibold mb-2">Business Analysis</h3>
-                            <p class="text-gray-200">Our team analyzes your business operations, identifying key processes that can be automated for maximum efficiency.</p>
-                        </div>
-
-                        <div class="process-step" data-aos="fade-left" data-aos-delay="200">
-                            <div class="step-number">2</div>
-                            <h3 class="text-xl font-semibold mb-2">Custom Workflow Design</h3>
-                            <p class="text-gray-200">We design automated workflows tailored specifically to your business needs and objectives.</p>
-                        </div>
-
-                        <div class="process-step" data-aos="fade-left" data-aos-delay="300">
-                            <div class="step-number">3</div>
-                            <h3 class="text-xl font-semibold mb-2">Seamless Implementation</h3>
-                            <p class="text-gray-200">Our team implements the entire system for you - nothing to install, configure, or learn.</p>
-                        </div>
-
-                        <div class="process-step" data-aos="fade-left" data-aos-delay="400">
-                            <div class="step-number">4</div>
-                            <h3 class="text-xl font-semibold mb-2">Continuous Optimization</h3>
-                            <p class="text-gray-200">Our AI continuously monitors performance and optimizes workflows based on real-world results.</p>
-                        </div>
-                    </div>
-
-                    <div class="order-1 lg:order-2">
-                        <div class="relative rounded-lg overflow-hidden shadow-xl" data-aos="zoom-out" data-aos-delay="200">
-                            <img src="assets/img/home/AI-workflow.png" alt="Implementation Process" class="w-full">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Skills Section -->
-        <section class="py-20">
-            <div class="container mx-auto px-4">
-                <div class="max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl font-bold mb-4 section-heading">Our Enterprise AI Expertise</h2>
-                    <p class="text-lg text-gray-200">We combine deep expertise across multiple AI disciplines to deliver comprehensive enterprise solutions.</p>
-                </div>
-
-                <div class="flex flex-wrap justify-center" data-aos="fade-in">
-                    <span class="skill-tag m-2">Artificial Intelligence</span>
-                    <span class="skill-tag m-2">Business Process Automation</span>
-                    <span class="skill-tag m-2">Lead Generation</span>
-                    <span class="skill-tag m-2">Customer Relationship Management</span>
-                    <span class="skill-tag m-2">Data Analytics</span>
-                    <span class="skill-tag m-2">Automated Workflow</span>
-                    <span class="skill-tag m-2">Natural Language Processing</span>
-                    <span class="skill-tag m-2">Automation Framework</span>
-                    <span class="skill-tag m-2">Data Integration</span>
-                    <span class="skill-tag m-2">Process Optimization</span>
-                    <span class="skill-tag m-2">Business Intelligence</span>
-                    <span class="skill-tag m-2">Machine Learning</span>
-                    <span class="skill-tag m-2">API Integration</span>
-                    <span class="skill-tag m-2">CRM Automation</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Comparison Section -->
-        <section class="py-20 bg-gray-50 bg-opacity-10 relative">
-            <div class="blur-bg" style="top: 30%; left: 10%;"></div>
-            <div class="blur-bg" style="top: 0%; right: 10%;"></div>
-            <div class="container mx-auto px-4">
-                <div class="max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl font-bold mb-4 section-heading">The QuantumOS Difference</h2>
-                    <p class="text-lg text-gray-200">See how our approach transforms enterprise AI implementation compared to traditional solutions.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="md:col-span-1" data-aos="fade-in" data-aos-delay="100">
-                        <div class="glass-card p-6 rounded-lg h-full">
-                            <h3 class="text-xl font-semibold mb-4 text-white">Traditional AI Implementation</h3>
-                            <ul class="space-y-4">
-                                <li class="flex items-start">
-                                    <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-200">Weeks or months to implement</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-200">Extensive training required for your team</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-200">Need to learn complex tools and interfaces</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-200">Ongoing maintenance and updates you must manage</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-200">You're responsible for ensuring it works properly</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-200">High technical knowledge required</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="md:col-span-2" data-aos="fade-in" data-aos-delay="200">
-                        <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg h-full border-l-4 border-green-500">
-                            <h3 class="text-xl font-semibold mb-4 text-green-600">QuantumOS Enterprise Implementation</h3>
-                            <ul class="space-y-4">
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-200">Ready in days, not months - we build everything for you using our proven implementation framework</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-200">Zero training required - our solutions work out-of-the-box with intuitive interfaces designed for business users</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-200">Simple interface designed specifically for busy enterprise teams with no technical complexity</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-200">We manage all updates and improvements - your system continuously evolves and improves automatically</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-200">Fully managed solution with ongoing enterprise-grade support and proactive optimization</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                    <span class="text-gray-200">No technical knowledge needed whatsoever - we handle all the complex implementation details</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonial Section -->
-        <section class="py-20">
-            <div class="container mx-auto px-4">
-                <div class="max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl font-bold mb-4 section-heading">Client Success Stories</h2>
-                    <p class="text-lg text-gray-200">See the transformative results our enterprise solutions have delivered.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10" data-aos="fade-in">
-                    <div class="testimonial-card glass-card">
-                        <div class="flex flex-col h-full">
-                            <div class="mb-6">
-                                <div class="flex mb-4">
-                                    <i class="fas fa-star text-yellow-400"></i>
-                                    <i class="fas fa-star text-yellow-400"></i>
-                                    <i class="fas fa-star text-yellow-400"></i>
-                                    <i class="fas fa-star text-yellow-400"></i>
-                                    <i class="fas fa-star text-yellow-400"></i>
-                                </div>
-                                <p class="text-gray-200 italic mb-6">"QuantumOS completely transformed our enterprise operations. Their AI system handles all our customer inquiries, qualifies leads, and manages workflows - all without our teams needing any technical training. We've increased
-                                    efficiency while reducing operational costs substantially."</p>
-                            </div>
-                            <div class="mt-auto">
-                                <p class="font-semibold">Sarah Johnson</p>
-                                <p class="text-gray-400 text-sm">Operations Director, Fortune 500 Retail Company</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card glass-card">
-                        <div class="flex flex-col h-full">
-                            <div class="mb-6">
-                                <div class="flex mb-4">
-                                    <i class="fas fa-star text-yellow-400"></i>
-                                    <i class="fas fa-star text-yellow-400"></i>
-                                    <i class="fas fa-star text-yellow-400"></i>
-                                    <i class="fas fa-star text-yellow-400"></i>
-                                    <i class="fas fa-star text-yellow-400"></i>
-                                </div>
-                                <p class="text-gray-200 italic mb-6">"The implementation process was incredibly smooth - QuantumOS handled everything from analysis to deployment. Our AI workforce now manages our entire customer relationship lifecycle, from initial contact through ongoing
-                                    service, resulting in 45% higher satisfaction scores."</p>
-                            </div>
-                            <div class="mt-auto">
-                                <p class="font-semibold">Michael Reynolds</p>
-                                <p class="text-gray-400 text-sm">CIO, Enterprise Healthcare Provider</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Offices Section -->
-        <section class="py-20 bg-gray-50 bg-opacity-10">
-            <div class="container mx-auto px-4">
-                <div class="max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl font-bold mb-4 section-heading">Our Global Presence</h2>
-                    <p class="text-lg text-gray-200">With offices strategically located across multiple regions, we provide enterprise solutions worldwide.</p>
-                </div>
-
-                <div class="grid grid-cols-1 gap-8" data-aos="fade-in">
-                    <div class="office-location glass-card">
-                        <div class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-green-500 text-2xl mr-4 mt-1"></i>
-                            <div>
-                                <h3 class="text-xl font-semibold mb-2">Phoenix, United States</h3>
-                                <p class="text-gray-500">Primary Location</p>
-                                <p class="text-gray-200 mt-2">Our headquarters houses our enterprise solutions team and primary implementation specialists.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-12" data-aos="fade-in" data-aos-delay="100">
-                    <div class="glass-card p-8 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Company Information</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div>
-                                <p class="text-gray-400 mb-1">Agency Size</p>
-                                <p class="font-semibold">25+ workers</p>
-                            </div>
-                            <div>
-                                <p class="text-gray-400 mb-1">Year Founded</p>
-                                <p class="font-semibold">2014</p>
-                            </div>
-                            <div>
-                                <p class="text-gray-400 mb-1">Client Focus</p>
-                                <p class="font-semibold">Large & Medium Businesses</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="order-1 md:order-2 flex justify-center">
+                    <img src="assets/img/workflow-ai.png" alt="Workflow Automation" class="w-80 rounded-xl shadow-xl">
                 </div>
             </div>
         </section>
 
         <!-- CTA Section -->
-        <section id="contact" class="py-20 cta-section">
-            <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Enterprise Operations?</h2>
-                    <p class="text-xl mb-10">Schedule a consultation with our enterprise solutions team to discover how our turnkey AI workforce can revolutionize your business processes.</p>
-
-                    <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
-                        <a href="sms:+14809130155" class="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-8 rounded-md transition duration-300 text-center">
-                            <i class="fas fa-comment-dots mr-2 animated-icon"></i> Text to 480-913-0155
-                        </a>
-                    </div>
-
-                </div>
+        <section class="py-24 bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-700 text-white text-center rounded-t-3xl mt-20">
+            <div class="max-w-3xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-4">Ready to accelerate your business with QuantumOS?</h2>
+                <p class="text-blue-100 mb-8">
+                    Deploy AI-driven operations faster than ever — no technical setup required.
+                </p>
+                <a href="#" class="bg-white text-blue-700 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition">
+        Talk to Our Team
+        </a>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -666,4 +303,5 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/call-solution.js"></script>
 </body>
+
 </html>
