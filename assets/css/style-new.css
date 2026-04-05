@@ -51,7 +51,7 @@
   .nav-links { list-style: none; display: flex; gap: 40px; align-items: center; }
   .nav-links a {
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.12em;
     color: var(--text-dim);
@@ -61,7 +61,7 @@
   }
   .nav-links a:hover { color: var(--white); }
   .nav-cta {
-    padding: 10px 24px !important;
+    padding: 14px 24px !important;
     border: 1px solid var(--gold) !important;
     color: var(--gold) !important;
     border-radius: 2px;
@@ -116,14 +116,14 @@
   }
   .hero-tag {
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--teal);
     margin-bottom: 28px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
     position: relative;
     z-index: 1;
   }
@@ -161,7 +161,7 @@
   /* ── BUTTONS ── */
   .btn-primary {
     font-family: 'DM Mono', monospace;
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     padding: 16px 36px;
@@ -178,11 +178,11 @@
   .btn-primary:hover {
     background: var(--gold-light);
     transform: translateY(-1px);
-    box-shadow: 0 12px 32px rgba(201,168,76,0.25);
+    box-shadow: 0 16px 32px rgba(201,168,76,0.25);
   }
   .btn-ghost {
     font-family: 'DM Mono', monospace;
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     padding: 16px 36px;
@@ -217,26 +217,26 @@
   }
   .stat-label {
     font-family: 'DM Mono', monospace;
-    font-size: 10px;
+    font-size: 16px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--text-dimmer);
+    color: var(--text-dim);
   }
 
   /* ── SECTION COMMON ── */
   section { padding: 120px 60px; position: relative; }
   .section-label {
     font-family: 'DM Mono', monospace;
-    font-size: 10px;
+    font-size: 16px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--gold);
     margin-bottom: 16px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
   }
-  .section-label::before { content: '//'; color: var(--text-dimmer); }
+  .section-label::before { content: '//'; color: var(--text-dim); }
   .section-intro {
     font-size: 17px;
     font-weight: 300;
@@ -257,7 +257,7 @@
     overflow: hidden;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
-    padding: 14px 0;
+    padding: 16px 0;
     background: var(--surface);
   }
   .ticker {
@@ -268,14 +268,14 @@
   }
   .ticker-item {
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--text-dimmer);
+    color: var(--text-dim);
     padding: 0 48px;
     display: inline-flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
   }
   .ticker-item::after {
     content: '◆';
@@ -306,7 +306,7 @@
   .cap-item:hover { background: var(--surface2); }
   .cap-icon {
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
+    font-size: 16px;
     color: var(--teal);
     letter-spacing: 0.1em;
     margin-bottom: 20px;
@@ -317,9 +317,9 @@
     font-size: 22px;
     font-weight: 500;
     color: var(--white);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
-  .cap-desc { font-size: 14px; line-height: 1.7; color: var(--text-dim); }
+  .cap-desc { font-size: 16px; line-height: 1.7; color: var(--text-dim); }
 
   /* ── PRICING ── */
   .pricing-header {
@@ -352,23 +352,23 @@
   }
   .plan-badge {
     position: absolute;
-    top: -12px; left: 36px;
+    top: -16px; left: 36px;
     font-family: 'DM Mono', monospace;
-    font-size: 9px;
+    font-size: 14px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     background: var(--gold);
     color: var(--bg);
-    padding: 4px 14px;
+    padding: 4px 16px;
     font-weight: 500;
   }
   .plan-tier {
     font-family: 'DM Mono', monospace;
-    font-size: 10px;
+    font-size: 14px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--teal);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
   .plan-name {
     font-family: 'Cormorant', serif;
@@ -385,8 +385,8 @@
   }
   .plan-price-from {
     font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    color: var(--text-dimmer);
+    font-size: 14px;
+    color: var(--text-dim);
     letter-spacing: 0.08em;
   }
   .plan-price-num {
@@ -398,11 +398,11 @@
   }
   .plan-price-mo {
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    color: var(--text-dimmer);
+    font-size: 14px;
+    color: var(--text-dim);
   }
   .plan-desc {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.7;
     color: var(--text-dim);
     margin-bottom: 28px;
@@ -413,21 +413,21 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     margin-bottom: 36px;
   }
   .plan-features li {
-    font-size: 13px;
+    font-size: 16px;
     color: var(--text-dim);
     display: flex;
-    gap: 10px;
+    gap: 14px;
     line-height: 1.5;
     align-items: flex-start;
   }
   .plan-features li .fi {
     color: var(--teal);
     flex-shrink: 0;
-    font-size: 11px;
+    font-size: 14px;
     margin-top: 2px;
     font-family: 'DM Mono', monospace;
   }
@@ -436,10 +436,10 @@
   .plan-btn {
     width: 100%;
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    padding: 14px;
+    padding: 16px;
     border: 1px solid var(--border-bright);
     background: transparent;
     color: var(--text);
@@ -470,15 +470,15 @@
   .addon-item:hover { background: var(--surface); }
   .addon-label {
     font-family: 'DM Mono', monospace;
-    font-size: 9px;
+    font-size: 16px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--gold);
     margin-bottom: 8px;
   }
-  .addon-name { font-size: 14px; font-weight: 400; color: var(--white); margin-bottom: 4px; }
+  .addon-name { font-size: 16px; font-weight: 400; color: var(--white); margin-bottom: 4px; }
   .addon-price { font-family: 'Cormorant', serif; font-size: 22px; font-weight: 500; color: var(--gold-light); }
-  .addon-note { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-dimmer); margin-top: 4px; }
+  .addon-note { font-family: 'DM Mono', monospace; font-size: 16px; color: var(--text-dim); margin-top: 4px; }
 
   /* ── CLAUDE DESKTOP ── */
   #claude-desktop { background: var(--surface); }
@@ -497,11 +497,11 @@
   }
   .pricing-block-label {
     font-family: 'DM Mono', monospace;
-    font-size: 9px;
+    font-size: 14px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--text-dimmer);
-    margin-bottom: 12px;
+    color: var(--text-dim);
+    margin-bottom: 16px;
   }
   .pricing-block-main {
     font-family: 'Cormorant', serif;
@@ -511,26 +511,26 @@
     line-height: 1;
     margin-bottom: 8px;
   }
-  .pricing-block-desc { font-size: 13px; color: var(--text-dim); line-height: 1.6; }
+  .pricing-block-desc { font-size: 16px; color: var(--text-dim); line-height: 1.6; }
   .skills-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 14px;
     margin-top: 32px;
   }
   .skill-item {
     background: var(--surface2);
     border: 1px solid var(--border);
     padding: 16px 20px;
-    font-size: 13px;
+    font-size: 16px;
     color: var(--text-dim);
     display: flex;
-    gap: 10px;
+    gap: 14px;
     align-items: center;
     transition: all 0.2s;
   }
   .skill-item:hover { border-color: var(--teal); color: var(--teal); }
-  .skill-num { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-dimmer); flex-shrink: 0; }
+  .skill-num { font-family: 'DM Mono', monospace; font-size: 14px; color: var(--text-dim); flex-shrink: 0; }
 
   /* ── MAC MINI ── */
   .mac-layout {
@@ -549,18 +549,18 @@
   }
   .mac-feature-list li {
     padding: 20px 28px;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text-dim);
     border-bottom: 1px solid var(--border);
     display: flex;
-    gap: 14px;
+    gap: 16px;
     align-items: flex-start;
     transition: background 0.2s;
   }
   .mac-feature-list li:last-child { border-bottom: none; }
   .mac-feature-list li:hover { background: var(--surface); }
   .mac-feature-list li i {
-    font-size: 11px;
+    font-size: 14px;
     color: var(--teal);
     margin-top: 2px;
     flex-shrink: 0;
@@ -573,7 +573,7 @@
   }
   .mac-price-label {
     font-family: 'DM Mono', monospace;
-    font-size: 10px;
+    font-size: 14px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--gold);
@@ -587,7 +587,7 @@
     line-height: 1;
     margin-bottom: 8px;
   }
-  .mac-price-sub { font-size: 13px; color: var(--text-dim); line-height: 1.6; margin-bottom: 32px; }
+  .mac-price-sub { font-size: 16px; color: var(--text-dim); line-height: 1.6; margin-bottom: 32px; }
   .mac-quote {
     font-family: 'Cormorant', serif;
     font-size: 20px;
@@ -620,9 +620,9 @@
     font-size: 20px;
     font-weight: 500;
     color: var(--white);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
-  .why-desc { font-size: 13px; line-height: 1.75; color: var(--text-dim); }
+  .why-desc { font-size: 16px; line-height: 1.75; color: var(--text-dim); }
 
   /* ── CTA ── */
   #cta {
@@ -642,7 +642,7 @@
   }
   .cta-label {
     font-family: 'DM Mono', monospace;
-    font-size: 10px;
+    font-size: 14px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--teal);
@@ -667,7 +667,7 @@
     flex-wrap: wrap;
     gap: 24px;
   }
-  .contact-item { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-dim); letter-spacing: 0.08em; }
+  .contact-item { font-family: 'DM Mono', monospace; font-size: 14px; color: var(--text-dim); letter-spacing: 0.08em; }
   .contact-item a { color: var(--teal); text-decoration: none; }
   .contact-item a:hover { color: var(--white); }
 
@@ -683,14 +683,14 @@
   }
   .footer-logo { font-family: 'Cormorant', serif; font-size: 18px; font-weight: 600; color: var(--white); }
   .footer-logo span { color: var(--gold); }
-  .footer-copy { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--text-dimmer); }
+  .footer-copy { font-family: 'DM Mono', monospace; font-size: 14px; letter-spacing: 0.1em; color: var(--text-dim); }
   .footer-links { display: flex; gap: 32px; list-style: none; }
   .footer-links a {
     font-family: 'DM Mono', monospace;
-    font-size: 10px;
+    font-size: 14px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--text-dimmer);
+    color: var(--text-dim);
     text-decoration: none;
     transition: color 0.2s;
   }
