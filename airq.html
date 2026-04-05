@@ -399,7 +399,7 @@
 
 <body>
     <!-- Header -->
-    <header class="header sticky top-0 py-4">
+     <header class="header sticky top-0 py-4">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <a class="flex items-center" href="/">
                 <div>
@@ -409,46 +409,87 @@
             </a>
             <div class="header_menu">
                 <div class="flex items-center justify-end lg:hidden mb-6">
-                    <button class="w-9 h-9 rounded-lg bg-white bg-opacity-10 border hover:bg-gray-50 transition duration-300 toggle_menu" type="button">
+                    <button
+                        class="w-9 h-9 rounded-lg bg-white bg-opacity-10 border hover:bg-gray-50 transition duration-300 toggle_menu"
+                        type="button">
                         <i class="fa-solid fa-xmark text-lg"></i>
                     </button>
                 </div>
                 <nav>
                     <ul class="flex flex-col lg:flex-row lg:items-center gap-y-6 gap-x-6">
                         <li><a class="text-gray-300 hover:text-white active_link" href="/">Home</a></li>
+                        <!-- 
+                            <li class="dropdown w-full lg:w-auto relative group hidden">
+                                <button
+                                    class="dropdown-toggle flex justify-between items-center w-full text-gray-300 hover:text-white focus:outline-none lg:w-auto lg:gap-1">
+                                    <span>Solutions</span>
+                                    <svg class="dropdown-arrow w-4 h-4 text-gray-400 transition-transform duration-200 transform"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+
+                                <ul
+                                    class="dropdown-menu lg:absolute lg:left-0 lg:top-full lg:mt-2 w-full lg:w-48 bg-gray-800 rounded-md shadow-lg overflow-hidden transition-all duration-300">
+                                    <li><a href="http://mypocketboss.com" target="_blank"
+                                            class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Pocket
+                                            Boss</a></li>
+                                    <li><a href="https://airassist.ai/" target="_blank"
+                                            class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Air
+                                            Assist</a></li>
+                                    <li><a href="https://www.getconnected.cloud/" target="_blank"
+                                            class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Get
+                                            Connected</a></li>
+                                    <li><a href="project-boss.html"
+                                            class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Project
+                                            Boss</a></li>
+                                    <li><a href="profit-boss.html"
+                                            class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Profit
+                                            Boss</a></li>
+                                    <li><a href="affiliate-boss.html"
+                                            class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Affiliate
+                                            Boss</a></li>
+                                    <li><a href="full-erp-automation.html"
+                                            class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Full
+                                            ERP Automation</a></li>
+                                </ul>
+                            </li> 
+                        -->
                         <li class="dropdown w-full lg:w-auto relative group">
-                            <button class="dropdown-toggle flex justify-between items-center w-full text-gray-300 hover:text-white focus:outline-none lg:w-auto lg:gap-1">
-                                <span>Solutions</span>
-                                <svg class="dropdown-arrow w-4 h-4 text-gray-400 transition-transform duration-200 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <button
+                                class="dropdown-toggle flex justify-between items-center w-full text-gray-300 hover:text-white focus:outline-none lg:w-auto lg:gap-1">
+                                <span>AI Tools</span>
+                                <svg class="dropdown-arrow w-4 h-4 text-gray-400 transition-transform duration-200 transform"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
 
                             <ul class="dropdown-menu lg:absolute lg:left-0 lg:top-full lg:mt-2 w-full lg:w-48 bg-gray-800 rounded-md shadow-lg overflow-hidden transition-all duration-300">
-                                <li><a href="http://mypocketboss.com" target="_blank" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Pocket Boss</a></li>
                                 <li><a href="https://airassist.ai/" target="_blank" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Air Assist</a></li>
-                                <li><a href="https://www.getconnected.cloud/" target="_blank" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Get Connected</a></li>
-                                <li><a href="project-boss.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Project Boss</a></li>
-                                <li><a href="profit-boss.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Profit Boss</a></li>
-                                <li><a href="affiliate-boss.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Affiliate Boss</a></li>
-                                <li><a href="full-erp-automation.html" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">Full ERP Automation</a></li>
+                                <li><a href="airq.html" target="_blank" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700">AIR Q</a></li>
                             </ul>
                         </li>
-                        <li><a class="text-gray-300 hover:text-white" href="https://airassist.ai/" target="_blank">Air Assist</a></li>
-                        <li><a class="text-gray-300 hover:text-white" href="robotshop.html">RobotShop</a></li>
-                        <li><a class="text-gray-300 hover:text-white" href="airq.html">AIR Q</a></li>
-                        <li><a class="text-gray-300 hover:text-white" href="metaverse-office-guide.html">Metaverse</a></li>
-                        <li><a class="text-gray-300 hover:text-white" href="revenue-increase-calculator.html">Revenue Increase Calculator</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="revenue-calculator.html">Revenue Calculator</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="https://incomepartners.site/" target="_blank">Income Partners</a></li>
+                        <li><a class="text-gray-300 hover:text-white" href="robotshop.html">Robot</a></li>
                         <li><a class="text-gray-300 hover:text-white" href="blog.html">Blog</a></li>
-                        <li class="lg:hidden"><a class="btn-gradient text-white font-medium py-2 px-4 rounded-md transition duration-300" href="sms:+16026414048">Text to 602-641-4048</a></li>
+                        <li class="lg:hidden">
+                            <a class="btn-gradient text-white font-medium py-2 px-4 rounded-md transition duration-300" href="sms:+16026414048">Text to 602-641-4048</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
             <div class="hidden lg:block">
-                <a href="sms:+16026414048" class="btn-gradient text-white font-medium py-2 px-4 rounded-md transition duration-300">Text to 602-641-4048</a>
+                <a href="sms:+16026414048"
+                    class="btn-gradient text-white font-medium py-2 px-4 rounded-md transition duration-300">Text to
+                    602-641-4048</a>
             </div>
             <div class="lg:hidden">
-                <button class="w-9 h-9 rounded-lg bg-white bg-opacity-10 border hover:bg-gray-50 transition duration-300 toggle_menu">
+                <button
+                    class="w-9 h-9 rounded-lg bg-white bg-opacity-10 border hover:bg-gray-50 transition duration-300 toggle_menu">
                     <i class="fas fa-bars text-lg"></i>
                 </button>
             </div>
